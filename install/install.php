@@ -1,18 +1,5 @@
 <?php
 
-/**
- * Employee Attendance Tracker - Mewdev
- * Author: Mansur Oguslu
- * Version: 1.0
- * Website: https://mewdev.com
- * Datum: 20/07/2023
- * E-mail: mansur.oguslu@mewdev.com
- * Twitter: https://twitter.com/mewdevcom
- * Facebook: https://www.facebook.com/mewdevcom/
- * GitHub: https://github.com/mansuroguslu
- * GNU GENERAL PUBLIC LICENSE
- */
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Datenbankverbindung herstellen
     $host = $_POST['host'];
@@ -121,19 +108,15 @@ EOD;
 <html>
 
 <head>
-    <title>Installation - Mewdev Employee Attendance Tracker</title>
+    <title>Installation - ZSI QR · Attendance Tracker</title>
     <meta name="robots" content="noindex, nofollow">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <div class="navbar">
     <div class="logo">
-        <a href="/"><img src="/admin/logo.png" alt="Logo"></a>
+        <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="3.5" y="3.5" width="2" height="2" fill="#2563eb" stroke="none"/><rect x="14.5" y="3.5" width="2" height="2" fill="#2563eb" stroke="none"/><rect x="3.5" y="14.5" width="2" height="2" fill="#2563eb" stroke="none"/><rect x="14" y="14" width="3" height="3" rx=".5" fill="#2563eb" stroke="none"/><rect x="18" y="14" width="3" height="3" rx=".5" fill="#2563eb" stroke="none"/><rect x="14" y="18" width="3" height="3" rx=".5" fill="#2563eb" stroke="none"/><rect x="18" y="18" width="3" height="3" rx=".5" fill="#2563eb" stroke="none"/></svg><span style="color:#fff;font-size:17px;font-weight:700;letter-spacing:.02em;">ZSI<span style="color:#2563eb;">QR</span></span></a>
     </div>
-    <div class="menu-links">
-        <a href="https://mewdev.com/employee-attendance-tracker/" target="_blank">About</a>
-        <a href="https://mewdev.com/#contact" target="_blank">Support</a>
-        <a href="https://fr-be.trustpilot.com/review/mewdev.com" target="_blank">Review</a>
-    </div>
+    <div class="menu-links"><span style="color:#fff;font-weight:700;font-size:15px;letter-spacing:.03em;">ZSI QR &mdash; Attendance Tracker</span></div>
 </div>
 
 <body>
@@ -166,7 +149,7 @@ EOD;
     </form>
 </body>
 <footer>
-    <p>&copy; <?php echo date("Y"); ?> Mewdev All rights reserved. Developed by <a href="https://www.mewdev.com" target="_blank">Mewdev.com</a></p>
+    <p>&copy; <?php echo date(chr(34)."Y".chr(34)); ?> ZSI QR · Attendance Tracker</p>
 </footer>
 
 </html>

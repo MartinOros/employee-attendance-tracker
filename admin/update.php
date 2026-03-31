@@ -1,18 +1,5 @@
 <?php
 
-/**
- * Employee Attendance Tracker - Mewdev
- * Author: Mansur Oguslu
- * Version: 1.0
- * Website: https://mewdev.com
- * Datum: 20/07/2023
- * E-mail: mansur.oguslu@mewdev.com
- * Twitter: https://twitter.com/mewdevcom
- * Facebook: https://www.facebook.com/mewdevcom/
- * GitHub: https://github.com/mansuroguslu
- * GNU GENERAL PUBLIC LICENSE
- */
-
 session_start();
 
 // Check if the user is not authenticated, redirect them to the login page
