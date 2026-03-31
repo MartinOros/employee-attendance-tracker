@@ -72,10 +72,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Prüfe, ob der Name nicht leer ist
     if (!empty($name)) {
         // Definiere den "Content Text" für den QR-Code
-        $contentText = "Name: " . $name;
+        $contentText = $name;
 
-        // Pfad zum Speichern des QR-Codes
-        $qrCodeImagePath = "qrcodepng/qr_code.png"; // Passe den Speicherpfad an
+        // Pfad zum Speichern des QR-Codes (unique per employee name)
+        $qrCodeImagePath = "qrcodepng/qr_" . preg_replace('/[^a-zA-Z0-9äöüßÄÖÜ_\-]/', '_', $name) . ".png";
 
         // Konfigurationsoptionen für den QR-Code
         $options = new chillerlan\QRCode\QROptions([
@@ -262,7 +262,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <div class="card">
             <h2>Name: <?php echo $name; ?></h2>
             <div class="qr-code">
-                <img src="qrcodepng/qr_code.png" alt="QR Code">
+                <img src="<?php echo htmlspecialchars($qrCodeImagePath); ?>" alt="QR Code">
             </div>
             <!-- Button zum Drucken -->
             <button onclick="window.print()" class="print-button">Print</button>
@@ -282,6 +282,27 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             }
         </script>
     <?php
+    }
+    ?>
+
+    <h2>Generated QR Codes</h2>
+    <?php
+    $qrFiles = glob(__DIR__ . '/qrcodepng/qr_*.png');
+    if (!empty($qrFiles)) {
+        echo '<div style="display:flex;flex-wrap:wrap;gap:20px;margin:20px 0;">';
+        foreach ($qrFiles as $file) {
+            $filename = basename($file);
+            $employeeName = str_replace(['qr_', '.png', '_'], ['', '', ' '], $filename);
+            $employeeName = trim($employeeName);
+            echo '<div style="text-align:center;border:1px solid #ccc;padding:10px;border-radius:5px;">';
+            echo '<img src="qrcodepng/' . htmlspecialchars($filename) . '" style="width:120px;height:120px;" alt="' . htmlspecialchars($employeeName) . '">';
+            echo '<p style="margin:5px 0;">' . htmlspecialchars($employeeName) . '</p>';
+            echo '<a href="qrcodepng/' . htmlspecialchars($filename) . '" download class="download-button" style="font-size:12px;padding:3px 8px;">Download</a>';
+            echo '</div>';
+        }
+        echo '</div>';
+    } else {
+        echo '<p>No QR codes generated yet.</p>';
     }
     ?>
 

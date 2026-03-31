@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $message = '';  // variable to store the message
 
-    if (isset($_POST['checkin']) && $_POST['checkin'] === 'Check-in' && preg_match("/^[a-zA-ZäöüßÄÖÜ\s]+$/", $employeeId)) {
+    if (isset($_POST['checkin']) && $_POST['checkin'] === 'Check-in' && preg_match("/^[a-zA-ZäöüßÄÖÜ\s\-_]+$/u", $employeeId)) {
         // Check if the employee has already checked in and checked out
         if ($checkResult->num_rows === 0 || $checkOutTime !== null) {
             // Check-in process
@@ -76,7 +76,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $message = "The employee: " . $employeeId . " has already checked in and not checked out.";
             header("Refresh:0");
         }
-    } elseif (isset($_POST['checkout']) && $_POST['checkout'] === 'Check-out' && preg_match("/^[a-zA-ZäöüßÄÖÜ\s]+$/", $employeeId)) {
+    } elseif (isset($_POST['checkout']) && $_POST['checkout'] === 'Check-out' && preg_match("/^[a-zA-ZäöüßÄÖÜ\s\-_]+$/u", $employeeId)) {
         // Check if the employee has already checked in and not checked out
         if ($checkResult->num_rows > 0 && $checkOutTime === null) {
             // Check-out process
