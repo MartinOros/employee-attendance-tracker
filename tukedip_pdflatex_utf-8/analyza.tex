@@ -179,6 +179,51 @@ Aktér: Administrátor. Pred: prihlásený. Výs: zmeny uložené; deaktivovaný
 \end{longtable}
 
 % -----------------------------------------------------------------------
+\subsection{Prioritizácia požiadaviek (MoSCoW)}
+
+V tejto časti sú požiadavky z~pohľadu používateľských príbehov a~prípadov použitia
+zoraďované pomocou metódy MoSCoW do kategórií:
+\textbf{M} (Must have), \textbf{S} (Should have), \textbf{C} (Could have),
+\textbf{W} (Won't have).
+
+\renewcommand{\arraystretch}{1.12}
+\setlength{\tabcolsep}{3pt}
+\footnotesize
+\begin{longtable}{|p{1.3cm}|p{1.3cm}|p{9.0cm}|p{1.0cm}|}
+\caption{MoSCoW prioritizácia požiadaviek}\label{t:moscow}\\
+\hline
+\textbf{US} & \textbf{UC} & \textbf{Požiadavka (stručne)} & \textbf{Prio} \\
+\hline
+\endfirsthead
+\hline
+\textbf{US} & \textbf{UC} & \textbf{Požiadavka (stručne)} & \textbf{Prio} \\
+\hline
+\endhead
+US-01 & UC-01 & Prihlásenie zamestnanca (meno/heslo) pre prístup ku skenovaniu. & M \\
+\hline
+US-02 & UC-02 & Skenovanie QR kódu a automatické uloženie príchodu/odchodu s časom. & M \\
+\hline
+US-03 & UC-03 & Zobrazenie potvrdenia po úspešnom skene. & S \\
+\hline
+US-04 & UC-04 & Odhlásenie používateľa a ukončenie relácie. & M \\
+\hline
+US-05 & UC-05 & Prihlásenie administrátora do admin rozhrania. & M \\
+\hline
+US-06 & UC-06 & Prehliadanie histórie dochádzky a filtrovanie záznamov. & M \\
+\hline
+US-07 & UC-07 & Úprava záznamu dochádzky (typ/čas). & S \\
+\hline
+US-07 & UC-08 & Vymazanie záznamu dochádzky (s potvrdením). & S \\
+\hline
+US-08 & UC-09 & Export záznamov do XLSX. & C \\
+\hline
+US-09 & UC-10 & Generovanie QR kódov pre zamestnancov. & M \\
+\hline
+US-10 & UC-11 & Správa zamestnancov (pridanie/deaktivácia). & S \\
+\hline
+\end{longtable}
+
+% -----------------------------------------------------------------------
 \subsection{Use Case Diagram}
 
 Diagram prípadov použitia (Obrázok~\ref{o:use-case-diagram}) znázorňuje vzťahy medzi
@@ -249,46 +294,493 @@ UC10 .> UC6 : <<extend>>
 \end{figure}
 
 % -----------------------------------------------------------------------
-\subsection{Prioritizácia požiadaviek (MoSCoW)}
+\normalsize
+\section{Konceptuálny model (Class Diagram)}
 
-V tejto časti sú požiadavky z~pohľadu používateľských príbehov a~prípadov použitia
-zoraďované pomocou metódy MoSCoW do kategórií:
-\textbf{M} (Must have), \textbf{S} (Should have), \textbf{C} (Could have),
-\textbf{W} (Won't have).
+Konceptuálny model systému je znázornený vo forme diagramu tried (Obrázok~\ref{o:class-diagram}).
+Diagram zachytáva hlavné entity aplikácie a~ich vzájomné vzťahy. Jadro modelu tvoria
+používatelia, zamestnanci, QR kódy a záznamy dochádzky. Zamestnanec má priradený
+unikátny QR kód a systém preňho ukladá záznamy príchodu/odchodu s časovou pečiatkou.
+Používateľské účty sú rozlíšené rolou (\textit{EMPLOYEE}, \textit{ADMIN}) a pre
+autentifikáciu sú reprezentované reláciami.
 
-\renewcommand{\arraystretch}{1.12}
-\setlength{\tabcolsep}{3pt}
+\begin{figure}[!ht]
+\centering
+\begin{plantuml}
+@startuml
+hide empty members
+skinparam classAttributeIconSize 0
+skinparam classFontSize 12
+skinparam shadowing false
+skinparam classBackgroundColor #EEF4FB
+skinparam classBorderColor #2C6DAD
+skinparam arrowColor #2C6DAD
+
+enum Role {
+  EMPLOYEE
+  ADMIN
+}
+
+enum AttendanceType {
+  ARRIVAL
+  DEPARTURE
+}
+
+class User {
+  +id: UUID
+  +name: string
+  +email: string
+  +passwordHash: string
+  +role: Role
+  +isActive: bool
+}
+
+class Employee {
+  +id: UUID
+  +displayName: string
+  +isActive: bool
+}
+
+class QRCode {
+  +id: UUID
+  +value: string
+  +createdAt: datetime
+}
+
+class AttendanceRecord {
+  +id: UUID
+  +type: AttendanceType
+  +timestamp: datetime
+  +source: string
+}
+
+class Session {
+  +id: UUID
+  +createdAt: datetime
+  +expiresAt: datetime
+}
+
+User "1" -- "0..*" Session : has
+User "0..1" -- "1" Employee : represents
+Employee "1" o-- "1" QRCode : has
+Employee "1" -- "0..*" AttendanceRecord : creates
+
+User ..> Employee : manages (ADMIN)
+User ..> AttendanceRecord : edits/deletes (ADMIN)
+User ..> QRCode : generates (ADMIN)
+
+@enduml
+\end{plantuml}
+\caption{Diagram tried — konceptuálny model systému}\label{o:class-diagram}
+\end{figure}
+
+\subsection{Popis tried}
+
+Nasledujúca tabuľka stručne popisuje účel jednotlivých tried v~konceptuálnom modeli.
+
+\renewcommand{\arraystretch}{1.2}
+\setlength{\tabcolsep}{4pt}
 \footnotesize
-\begin{longtable}{|p{1.3cm}|p{1.3cm}|p{9.0cm}|p{1.0cm}|}
-\caption{MoSCoW prioritizácia požiadaviek}\label{t:moscow}\\
+\begin{longtable}{|p{3.2cm}|p{4.5cm}|p{6.5cm}|}
+\caption{Popis tried konceptuálneho modelu}\label{t:classes}\\
 \hline
-\textbf{US} & \textbf{UC} & \textbf{Požiadavka (stručne)} & \textbf{Prio} \\
+\textbf{Trieda} & \textbf{Zodpovednosť} & \textbf{Kľúčové vzťahy} \\
 \hline
 \endfirsthead
 \hline
-\textbf{US} & \textbf{UC} & \textbf{Požiadavka (stručne)} & \textbf{Prio} \\
+\textbf{Trieda} & \textbf{Zodpovednosť} & \textbf{Kľúčové vzťahy} \\
 \hline
 \endhead
-US-01 & UC-01 & Prihlásenie zamestnanca (meno/heslo) pre prístup ku skenovaniu. & M \\
+\texttt{User} &
+Používateľský účet systému. Rozlíšenie oprávnení je dané rolou (zamestnanec vs. administrátor). &
+Má \texttt{Session}; môže reprezentovať \texttt{Employee}. Administrátor spravuje \texttt{AttendanceRecord} a generuje \texttt{QRCode}. \\
 \hline
-US-02 & UC-02 & Skenovanie QR kódu a automatické uloženie príchodu/odchodu s časom. & M \\
+\texttt{Employee} &
+Entita zamestnanca, ktorá má pridelený QR kód a ku ktorej sa viažu záznamy dochádzky. &
+Má \texttt{QRCode} a vytvára \texttt{AttendanceRecord}; je reprezentovaný účtom \texttt{User}. \\
 \hline
-US-03 & UC-03 & Zobrazenie potvrdenia po úspešnom skene. & S \\
+\texttt{AttendanceRecord} &
+Záznam príchodu alebo odchodu zamestnanca s časovou pečiatkou a typom záznamu. &
+Patrí \texttt{Employee}; administrátor (cez \texttt{User}) ho môže upraviť alebo vymazať. \\
 \hline
-US-04 & UC-04 & Odhlásenie používateľa a ukončenie relácie. & M \\
+\texttt{QRCode} &
+Unikátny QR kód priradený zamestnancovi, používaný pri skenovaní. &
+Patrí \texttt{Employee}; generuje ho administrátor (cez \texttt{User}). \\
 \hline
-US-05 & UC-05 & Prihlásenie administrátora do admin rozhrania. & M \\
-\hline
-US-06 & UC-06 & Prehliadanie histórie dochádzky a filtrovanie záznamov. & M \\
-\hline
-US-07 & UC-07 & Úprava záznamu dochádzky (typ/čas). & S \\
-\hline
-US-07 & UC-08 & Vymazanie záznamu dochádzky (s potvrdením). & S \\
-\hline
-US-08 & UC-09 & Export záznamov do XLSX. & C \\
-\hline
-US-09 & UC-10 & Generovanie QR kódov pre zamestnancov. & M \\
-\hline
-US-10 & UC-11 & Správa zamestnancov (pridanie/deaktivácia). & S \\
+\texttt{Session} &
+Relácia používateľa používaná pre autentifikáciu a odhlásenie. &
+Patrí \texttt{User}. \\
 \hline
 \end{longtable}
+\normalsize
+
+% -----------------------------------------------------------------------
+\section{Stavový diagram (State Diagram)}
+
+V tejto časti sú definované stavové diagramy vybraných entít systému. Stavové diagramy
+popisujú možné stavy entít a prechody medzi nimi vyvolané akciami používateľa alebo
+udalosťami v systéme.
+
+\subsection{Stavový diagram relácie (\texttt{Session})}
+
+\begin{figure}[H]
+\centering
+\plantumlsetsize{0.65\linewidth}{0.45\textheight}
+\begin{plantuml}
+@startuml
+skinparam state {
+  BackgroundColor #EEF4FB
+  BorderColor #2C6DAD
+  ArrowColor #2C6DAD
+}
+
+[*] --> Created : createSession()
+Created --> Active : loginSuccess
+Active --> Expired : expiresAt reached
+Active --> Terminated : logout
+Expired --> [*]
+Terminated --> [*]
+@enduml
+\end{plantuml}
+\plantumlsetsize{0.85\linewidth}{0.75\textheight}
+\caption{Stavový diagram entity \texttt{Session}}\label{o:state-session}
+\end{figure}
+
+\subsection{Stavový diagram záznamu dochádzky (\texttt{AttendanceRecord})}
+
+\begin{figure}[H]
+\centering
+\plantumlsetsize{0.65\linewidth}{0.45\textheight}
+\begin{plantuml}
+@startuml
+skinparam state {
+  BackgroundColor #EEF4FB
+  BorderColor #2C6DAD
+  ArrowColor #2C6DAD
+}
+
+[*] --> Recorded : scanQRCode()
+Recorded --> Corrected : adminEdit(type/timestamp)
+Recorded --> Deleted : adminDelete()
+Corrected --> Deleted : adminDelete()
+Deleted --> [*]
+@enduml
+\end{plantuml}
+\plantumlsetsize{0.85\linewidth}{0.75\textheight}
+\caption{Stavový diagram entity \texttt{AttendanceRecord}}\label{o:state-attendance}
+\end{figure}
+
+\subsection{Stavový diagram zamestnanca (\texttt{Employee})}
+
+\begin{figure}[H]
+\centering
+\plantumlsetsize{0.65\linewidth}{0.45\textheight}
+\begin{plantuml}
+@startuml
+skinparam state {
+  BackgroundColor #EEF4FB
+  BorderColor #2C6DAD
+  ArrowColor #2C6DAD
+}
+
+[*] --> Active : addEmployee()
+Active --> Inactive : deactivate()
+Inactive --> Active : reactivate()
+@enduml
+\end{plantuml}
+\plantumlsetsize{0.85\linewidth}{0.75\textheight}
+\caption{Stavový diagram entity \texttt{Employee}}\label{o:state-employee}
+\end{figure}
+
+% -----------------------------------------------------------------------
+\section{Sekvenčný diagram a diagram aktivít (Sequence \& Activity diagram)}
+
+Táto kapitola uvádza grafické znázornenie sekvenčného toku hlavného procesu aplikácie a~diagramy
+aktivít pre dve kľúčové funkcionality. Ako hlavný proces je zvolený tok \textit{skenovania QR kódu}
+zamestnancom, pretože predstavuje jadro bezkontaktnej evidencie príchodov a~odchodov.
+
+\subsection{Sekvenčný diagram hlavného procesu (sken QR kódu)}
+
+\begin{figure}[H]
+\centering
+\plantumlsetsize{0.80\linewidth}{0.65\textheight}
+\begin{plantuml}
+@startuml
+hide footbox
+autonumber
+
+actor Zamestnanec as EMP
+boundary "Web aplikácia\n(kamera + UI)" as APP
+control "QR parser\n(jsQR)" as PARSER
+control "API (PHP)\n/attendance/scan" as API
+database "DB" as DB
+
+EMP -> APP : otvorí stránku skenovania\n(prihlásený používateľ)
+APP -> APP : zapne kameru\n(getUserMedia)
+EMP -> APP : nasmeruje kameru na QR kód
+APP -> PARSER : snímka z kamery\n+ dekódovanie QR
+PARSER --> APP : employeeId / token
+
+APP -> API : POST scan(employeeId/token)
+API -> DB : overí zamestnanca\n+ zistí posledný záznam
+DB --> API : posledný záznam / none
+
+alt posledný záznam = ARRIVAL bez DEPARTURE
+  API -> DB : uloží DEPARTURE(timestamp)
+  DB --> API : OK
+  API --> APP : potvrdenie\n(DEPARTURE, čas)
+else inak
+  API -> DB : uloží ARRIVAL(timestamp)
+  DB --> API : OK
+  API --> APP : potvrdenie\n(ARRIVAL, čas)
+end
+
+APP --> EMP : zobrazí potvrdenie\n+ výsledok uloženia
+@enduml
+\end{plantuml}
+\plantumlsetsize{0.85\linewidth}{0.75\textheight}
+\caption{Sekvenčný diagram hlavného procesu – skenovanie QR kódu}\label{o:seq-main-scan}
+\end{figure}
+
+\subsection{Diagram aktivít – UC-02 Skenovanie QR kódu}
+
+\begin{figure}[H]
+\centering
+\plantumlsetsize{0.72\linewidth}{0.70\textheight}
+\begin{plantuml}
+@startuml
+start
+:Prihlásený zamestnanec otvorí\nstránku skenovania;
+:Aplikácia inicializuje kameru;
+if (Kamera dostupná?) then (áno)
+  :Zamestnanec nasmeruje\nkameru na QR kód;
+  :Snímka -> dekódovanie QR;
+  if (QR je platný?) then (áno)
+    :Odoslať scan na server;
+    :Server určí typ záznamu\n(príchod/odchod);
+    :Uložiť záznam do DB;
+    :Zobraziť potvrdenie\n(typ, čas);
+  else (nie)
+    :Zobraziť chybu\n(neplatný QR);
+  endif
+else (nie)
+  :Zobraziť chybu\n(kamera nedostupná);
+endif
+stop
+@enduml
+\end{plantuml}
+\plantumlsetsize{0.85\linewidth}{0.75\textheight}
+\caption{Diagram aktivít – UC-02 Skenovanie QR kódu}\label{o:act-uc02-scan}
+\end{figure}
+
+\subsection{Diagram aktivít – UC-06 Prehliadanie a filtrovanie dochádzky}
+
+\begin{figure}[H]
+\centering
+\plantumlsetsize{0.80\linewidth}{0.75\textheight}
+\begin{plantuml}
+@startuml
+start
+:Administrátor sa prihlási\n(UC-05);
+:Otvorí prehľad dochádzky;
+:Načítať záznamy z DB;
+:Zobraziť tabuľku záznamov;
+
+repeat
+  :Nastaviť filter\n(meno/dátum/typ);
+  :Odoslať požiadavku na API;
+  :Načítať filtrované záznamy;
+  :Aktualizovať tabuľku;
+repeat while (Chce zmeniť filter?) is (áno)
+
+if (Chce exportovať do XLSX?) then (áno)
+  :Spustiť export (UC-09);
+  :Vygenerovať XLSX zo zobrazených\nfiltrovaných záznamov;
+  :Stiahnuť súbor;
+endif
+stop
+@enduml
+\end{plantuml}
+\plantumlsetsize{0.85\linewidth}{0.75\textheight}
+\caption{Diagram aktivít – UC-06 Prehliadanie a filtrovanie dochádzky}\label{o:act-uc06-view-filter}
+\end{figure}
+
+% -----------------------------------------------------------------------
+\section{Návrh používateľského rozhrania (UI-design)}
+
+Táto časť predstavuje vizuálny návrh webovej aplikácie \textit{ZSI QR — Attendance Tracker}.
+Rozhranie je rozdelené podľa rolí: používateľská časť pre zamestnanca (skenovanie QR kódu, história vlastnej dochádzky)
+a rozhranie administrátora (filtre, tabuľka záznamov, export, generovanie QR kódov). Nižšie sú uvedené reprezentatívne
+snímky obrazovky z aktuálnej implementácie, ktoré dokumentujú rozloženie prvkov a hlavné akcie používateľa.
+
+\subsection{Rozhranie pre zamestnanca}
+
+Hlavná obrazovka združuje primárnu akciu \textbf{Skenovanie QR kódu} (UC-02) a prehľad \textbf{histórie dochádzky}
+aktuálneho používateľa. Horný panel obsahuje navigáciu a odkaz do administrátorskej zóny.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\linewidth]{ui-employee-app.png}
+\caption{Používateľské rozhranie zamestnanca: skenovanie QR kódu a história dochádzky}\label{o:ui-employee}
+\end{figure}
+
+\subsection{Administrátorské rozhranie}
+
+Administrátorský panel zobrazuje filtre (identifikácia zamestnanca, dátumy príchodu/odchodu, minimálny odpracovaný čas),
+tabuľku všetkých zamestnancov s možnosťou úpravy a vymazania záznamov (UC-07, UC-08) a akcie na export do Excelu (UC-09).
+Ďalšie funkcie sú dostupné cez tlačidlá v hlavičke (napr. generovanie QR kódov, UC-10).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\linewidth]{ui-admin-dashboard.png}
+\caption{Administrátorské rozhranie: filtre, tabuľka dochádzky a akcie}\label{o:ui-admin}
+\end{figure}
+
+% -----------------------------------------------------------------------
+\section{Testovanie}
+
+Cieľom testovania je overiť správanie webovej aplikácie voči definovaným prípadom použitia
+(viz Tabuľka~\ref{t:use-cases} a user stories v Tabuľke~\ref{t:user-stories}), identifikovať chyby v logike
+a rozhraní a potvrdiť použiteľnosť pre zamestnancov a administrátorov.
+
+\subsection{Testovacia stratégia}
+
+Testovanie je navrhnuté ako \textbf{primárne funkčné a manuálne}, doplnené o~\textbf{negatívne scenáre}
+(nesprávne vstupy, odmietnutý prístup) a \textbf{regresné kontroly} po úprave kódu (prihlásenie, sken,
+administrátorské akcie).
+
+\begin{itemize}
+  \item \textbf{Rozsah:} autentifikácia oboch rolí, sken QR kódu a zápis dochádzky, zobrazenie histórie,
+  filtrovanie a úpravy v administrácii, export do Excelu, generovanie QR kódov a správa zamestnancov.
+  \item \textbf{Úroveň:} testy na úrovni používateľského rozhrania (\textit{UI}) a obchodnej logiky
+  viditeľnej z odpovedí systému a stavu databázy (odporúča sa vizuálna kontrola záznamov po skene).
+  \item \textbf{Prostredie:} lokálny alebo skúšobný server, bežný webový prehliadač s povolenou kamerou
+  pre UC-02; administrátorská časť bez kamery.
+  \item \textbf{Kritériá úspechu:} pre každý test case v Tabuľke~\ref{t:test-cases} je v stĺpci uvedený
+  očakávaný výsledok; test sa považuje za úspešný, ak sa výsledok zhoduje a systém nespadne.
+  \item \textbf{Dokumentácia:} evidencia môže byť vo forme jednoduchého checklistu (ID testu, dátum, výsledok OK/FAIL, poznámka).
+\end{itemize}
+
+\subsection{Testovacie scenáre (test cases)}
+
+Nižšie uvedené scenáre priamo vychádzajú z prípadov použitia UC-01 až UC-11. Pre kľúčové funkcie sú doplnené
+aj negatívne variácie (označené ako rozšírenie daného UC).
+
+\renewcommand{\arraystretch}{1.1}
+\setlength{\tabcolsep}{3pt}
+\footnotesize
+\begin{longtable}{|p{1.0cm}|p{1.0cm}|p{3.0cm}|p{3.5cm}|p{4.8cm}|}
+\caption{Testovacie scenáre (test cases) vo väzbe na use cases}\label{t:test-cases}\\
+\hline
+\textbf{TC} & \textbf{UC} & \textbf{Názov scenára} & \textbf{Kroky (skrátene)} & \textbf{Očakávaný výsledok} \\
+\hline
+\endfirsthead
+\hline
+\textbf{TC} & \textbf{UC} & \textbf{Názov scenára} & \textbf{Kroky (skrátene)} & \textbf{Očakávaný výsledok} \\
+\hline
+\endhead
+TC-01 & UC-01 & Platné prihlásenie zamestnanca &
+Otvor \texttt{login-app.php}; zadaj platné meno a heslo; odošli formulár. &
+Presmerovanie na hlavnú stránku; session je aktívna (prístup k skenovaniu). \\
+\hline
+TC-02 & UC-01 & Neplatné prihlásenie zamestnanca &
+Zadaj neexistujúce meno alebo nesprávne heslo; odošli. &
+Chybová správa; používateľ ostáva na prihlasovacej stránke; session nie je vytvorená. \\
+\hline
+TC-03 & UC-02 & Úspešné skenovanie QR a zápis dochádzky &
+Prihlás sa ako zamestnanec; otvor skener; naskenuj platný kód zamestnanca; potvrď akciu. &
+Záznam príchodu alebo odchodu v DB s časovou pečiatkou; v UI viditeľná aktualizácia histórie alebo potvrdenie. \\
+\hline
+TC-04 & UC-02 & Skenovanie bez platného QR / zamietnutie &
+Spusti skener; namier na neplatný alebo cudzí obrázok. &
+Systém nespustí zápis; používateľ dostane chybové hlásenie alebo môže skúsiť znova bez pádu aplikácie. \\
+\hline
+TC-05 & UC-03 & Zobrazenie potvrdenia po skene &
+Po úspešnom UC-02 sleduj správu alebo stav v rozhraní. &
+Zobrazí sa potvrdenie typu záznamu a času alebo ekvivalentný vizuálny indikátor úspechu. \\
+\hline
+TC-06 & UC-04 & Odhlásenie zamestnanca &
+Na hlavnej stránke klikni na odhlásenie. &
+Session zrušená; presmerovanie na odhlasovaciu stránku; chránený obsah nie je dostupný bez nového prihlásenia. \\
+\hline
+TC-07 & UC-05 & Platné prihlásenie administrátora &
+Otvor admin login; zadaj platné admin údaje. &
+Presmerovanie na admin dashboard; prístup k tabuľke a filtru. \\
+\hline
+TC-08 & UC-05 & Neplatné prihlásenie administrátora &
+Zadaj nesprávne údaje. &
+Chyba; ostávaš na prihlásení; žiadny admin obsah. \\
+\hline
+TC-09 & UC-06 & Filtrovanie dochádzky &
+Nastav filtre (zamestnanec, dátumy); klikni Filter. &
+Tabuľka obsahuje len záznamy spĺňajúce kritériá. \\
+\hline
+TC-10 & UC-07 & Úprava záznamu dochádzky &
+Vyber riadok; uprav čas alebo relevantné polia; ulož. &
+Zmeny persistované; tabuľka zobrazuje nové hodnoty po obnovení/filtri. \\
+\hline
+TC-11 & UC-08 & Vymazanie záznamu &
+Vyber riadok; potvrď vymazanie. &
+Záznam v DB odstránený; už sa nezobrazí v prehľade. \\
+\hline
+TC-12 & UC-09 & Export do Excelu &
+Nastav filter (voliteľne); spusti export XLSX. &
+Súbor sa stiahne; obsahuje záznamy zodpovedajúce aktuálnemu zobrazeniu. \\
+\hline
+TC-13 & UC-10 & Generovanie QR kódu &
+V admin časti vygeneruj QR pre vybraného zamestnanca. &
+QR súbor alebo náhľad dostupný; kód je použiteľný pri skenovaní (UC-02). \\
+\hline
+TC-14 & UC-11 & Pridanie / aktivácia zamestnanca &
+Pridaj nového zamestnanca (podľa implementácie). &
+Zamestnanec je v systéme; môže dostať QR; sken je možný po splnení pravidiel. \\
+\hline
+TC-15 & UC-11 & Deaktivácia zamestnanca &
+Deaktivuj účet/zamestnanca; pokús sa o sken jeho značky. &
+Systém zamietne alebo nezapíše sken podľa pravidiel; zamestnanec nemá plný prístup. \\
+\hline
+\end{longtable}
+
+% -----------------------------------------------------------------------
+\section{Vlastné riešenie}
+
+Táto kapitola stručne sumarizuje implementované riešenie systému pre bezkontaktné zaznamenávanie
+príchodov a~odchodov zamestnancov pomocou QR kódov. Riešenie je realizované ako webová aplikácia
+so samostatnou časťou pre zamestnanca a administrátorskou časťou.
+
+\subsection{Prehľad architektúry}
+
+Systém je navrhnutý ako jednoduchá klient--server aplikácia:
+\begin{itemize}
+  \item \textbf{Klient (prehliadač):} používateľské rozhranie, ovládanie kamery a dekódovanie QR kódu,
+  zobrazovanie histórie dochádzky.
+  \item \textbf{Server (PHP):} spracovanie požiadaviek, autentifikácia, práca so záznamami dochádzky,
+  export do XLSX a generovanie QR kódov.
+  \item \textbf{Databáza (MySQL/MariaDB):} uloženie používateľov a záznamov dochádzky.
+\end{itemize}
+
+\subsection{Hlavné funkcionality}
+
+\begin{itemize}
+  \item \textbf{Autentifikácia a relácie:} zamestnanec a administrátor sa prihlasujú do samostatných
+  rozhraní. Po prihlásení je používateľ autentifikovaný pomocou serverovej relácie (session).
+  \item \textbf{Skenovanie QR kódu:} v zamestnaneckej časti aplikácia využíva kameru zariadenia a
+  dekóduje QR kód (identifikátor zamestnanca). Následne sa na serveri vytvorí záznam príchodu alebo
+  odchodu podľa posledného stavu (príchod bez odchodu \(\rightarrow\) odchod, inak príchod).
+  \item \textbf{Prehľad dochádzky:} zamestnanec vidí posledné záznamy v tabuľke s informáciou o stave
+  (napr. aktívny/pripravený vs. ukončený záznam).
+  \item \textbf{Administrácia:} administrátor má prehľad všetkých záznamov, môže ich filtrovať, upravovať
+  a mazať. Súčasťou je export záznamov do Excelu (XLSX) a nástroje na správu zamestnancov.
+  \item \textbf{Generovanie QR kódov:} administrátor môže vygenerovať unikátne QR kódy pre zamestnancov,
+  ktoré sú následne používané pri skenovaní v zamestnaneckej časti.
+\end{itemize}
+
+\subsection{Použité technológie}
+
+\begin{itemize}
+  \item \textbf{PHP} na serverovej strane (spracovanie formulárov, relácie, komunikácia s DB).
+  \item \textbf{HTML/CSS} pre používateľské rozhranie (jednotný štýl aplikácie, navigačný panel, tabuľky).
+  \item \textbf{JavaScript} pre prácu s kamerou a dekódovanie QR kódu na klientovi.
+  \item \textbf{Databáza} pre perzistenciu záznamov dochádzky a používateľov.
+\end{itemize}
+\normalsize

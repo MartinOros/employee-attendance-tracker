@@ -1,0 +1,32 @@
+@startuml
+hide footbox
+autonumber
+
+actor Zamestnanec as EMP
+boundary "Web aplikácia\n(kamera + UI)" as APP
+control "QR parser\n(jsQR)" as PARSER
+control "API (PHP)\n/attendance/scan" as API
+database "DB" as DB
+
+EMP -> APP : otvorí stránku skenovania\n(prihlásený používateľ)
+APP -> APP : zapne kameru\n(getUserMedia)
+EMP -> APP : nasmeruje kameru na QR kód
+APP -> PARSER : snímka z kamery\n+ dekódovanie QR
+PARSER --> APP : employeeId / token
+
+APP -> API : POST scan(employeeId/token)
+API -> DB : overí zamestnanca\n+ zistí posledný záznam
+DB --> API : posledný záznam / none
+
+alt posledný záznam = ARRIVAL bez DEPARTURE
+  API -> DB : uloží DEPARTURE(timestamp)
+  DB --> API : OK
+  API --> APP : potvrdenie\n(DEPARTURE, čas)
+else inak
+  API -> DB : uloží ARRIVAL(timestamp)
+  DB --> API : OK
+  API --> APP : potvrdenie\n(ARRIVAL, čas)
+end
+
+APP --> EMP : zobrazí potvrdenie\n+ výsledok uloženia
+@enduml

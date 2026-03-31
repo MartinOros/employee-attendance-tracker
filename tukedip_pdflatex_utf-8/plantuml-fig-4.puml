@@ -1,0 +1,13 @@
+@startuml
+skinparam state {
+  BackgroundColor #EEF4FB
+  BorderColor #2C6DAD
+  ArrowColor #2C6DAD
+}
+
+[*] --> Recorded : scanQRCode()
+Recorded --> Corrected : adminEdit(type/timestamp)
+Recorded --> Deleted : adminDelete()
+Corrected --> Deleted : adminDelete()
+Deleted --> [*]
+@enduml

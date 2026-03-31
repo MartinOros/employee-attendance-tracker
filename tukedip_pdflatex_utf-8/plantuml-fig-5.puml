@@ -1,0 +1,11 @@
+@startuml
+skinparam state {
+  BackgroundColor #EEF4FB
+  BorderColor #2C6DAD
+  ArrowColor #2C6DAD
+}
+
+[*] --> Active : addEmployee()
+Active --> Inactive : deactivate()
+Inactive --> Active : reactivate()
+@enduml

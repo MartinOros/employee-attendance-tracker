@@ -230,10 +230,118 @@ footer {
 footer a { color: #94a3b8; text-decoration: none; }
 footer a:hover { color: #fff; }
 
+/* ── AUTH: login / logout (konzistentné s aplikáciou) ── */
+.auth-card {
+  max-width: 420px;
+  margin: 48px auto;
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 32px 28px 28px;
+}
+
+.auth-card h1 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text);
+  text-align: center;
+  margin-bottom: 6px;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.auth-card .auth-sub {
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 24px;
+  line-height: 1.4;
+}
+
+.auth-card form label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.auth-card input[type="text"],
+.auth-card input[type="password"] {
+  width: 100%;
+  padding: 11px 14px;
+  margin-bottom: 18px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: inherit;
+  color: var(--text);
+  background: #fff;
+  transition: border-color .2s, box-shadow .2s;
+}
+
+.auth-card input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.auth-card input[type="submit"],
+.auth-card .auth-button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff !important;
+  background: var(--primary);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+  transition: background 0.2s;
+  text-align: center;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+.auth-card input[type="submit"]:hover,
+.auth-card .auth-button:hover {
+  background: var(--primary-dark);
+}
+
+.auth-error {
+  background: #fef2f2;
+  color: #b91c1c;
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 1px solid #fecaca;
+}
+
+.auth-logout-badge {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background: #dcfce7;
+  color: var(--success-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+}
+
 /* ── RESPONSIVE ── */
 @media (max-width: 640px) {
   .navbar .menu-links { display: none; }
   .navbar { padding: 0 14px; }
   button#scanQR { width: 100%; margin: 32px auto; }
   table th, table td { padding: 10px 12px; font-size: 13px; }
+  .auth-card { margin: 24px auto; padding: 24px 20px; }
 }

@@ -1,0 +1,63 @@
+@startuml
+hide empty members
+skinparam classAttributeIconSize 0
+skinparam classFontSize 12
+skinparam shadowing false
+skinparam classBackgroundColor #EEF4FB
+skinparam classBorderColor #2C6DAD
+skinparam arrowColor #2C6DAD
+
+enum Role {
+  EMPLOYEE
+  ADMIN
+}
+
+enum AttendanceType {
+  ARRIVAL
+  DEPARTURE
+}
+
+class User {
+  +id: UUID
+  +name: string
+  +email: string
+  +passwordHash: string
+  +role: Role
+  +isActive: bool
+}
+
+class Employee {
+  +id: UUID
+  +displayName: string
+  +isActive: bool
+}
+
+class QRCode {
+  +id: UUID
+  +value: string
+  +createdAt: datetime
+}
+
+class AttendanceRecord {
+  +id: UUID
+  +type: AttendanceType
+  +timestamp: datetime
+  +source: string
+}
+
+class Session {
+  +id: UUID
+  +createdAt: datetime
+  +expiresAt: datetime
+}
+
+User "1" -- "0..*" Session : has
+User "0..1" -- "1" Employee : represents
+Employee "1" o-- "1" QRCode : has
+Employee "1" -- "0..*" AttendanceRecord : creates
+
+User ..> Employee : manages (ADMIN)
+User ..> AttendanceRecord : edits/deletes (ADMIN)
+User ..> QRCode : generates (ADMIN)
+
+@enduml

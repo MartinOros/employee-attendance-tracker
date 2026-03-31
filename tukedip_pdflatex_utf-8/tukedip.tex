@@ -33,7 +33,14 @@
 \usepackage{tabularx}
 \usepackage{longtable}
 \usepackage{pdflscape}
+\usepackage{float}
 \usepackage{array}
+% PlantUML JAR (pre automatické generovanie .png pri pdflatex --shell-escape)
+\IfFileExists{/Users/martinoros/bin/plantuml.jar}{%
+  \providecommand{\plantumljarpath}{/Users/martinoros/bin/plantuml.jar}%
+}{%
+  \providecommand{\plantumljarpath}{plantuml.jar}%
+}
 \usepackage{plantuml}
 \IfFileExists{upgreek.sty}{%
   \usepackage{upgreek}% napr. $\upmu\mathrm{m}$ pre mikrometer ...
@@ -132,6 +139,10 @@ nemožno deliť a~uvádzať na dvoch strabách).}
 
 \begin{document}
 \renewcommand{\figurename}{Obrázok}	
+\makeatletter
+\@addtoreset{figure}{section}
+\makeatother
+\renewcommand{\thefigure}{\thesection.\arabic{figure}}
 \renewcommand\theHfigure{\theHsection.\arabic{figure}}
 \renewcommand\theHtable{\theHsection.\arabic{table}}
 \bibliographystyle{dcu}
@@ -241,30 +252,31 @@ nemožno deliť a~uvádzať na dvoch strabách).}
 %
 \include{analyza}
 %
-\include{jadroprace}
-%
-\include{zaver}
-%
-\include{literatura}
-%
-\include{prilohy}
-%
-\include{prilohaa}
-%
-\include{prilohab}
-%
-\include{prilohac}
+% Ďalšie časti dokumentu odstránené na požiadanie – dokument končí po sekcii Testovanie.
+%\include{jadroprace}
+%%
+%\include{zaver}
+%%
+%\include{literatura}
+%%
+%\include{prilohy}
+%%
+%\include{prilohaa}
+%%
+%\include{prilohab}
+%%
+%\include{prilohac}
 %
 % zivotopis autora
-\newpage
-\phantomsection
-\protect\label{page:posledna}
-\curriculumvitae
-Táto časť je nepovinná. Autor tu môže uviesť svoje biografické
-údaje, údaje o~záujmoch, účasti na~projektoch, účasti na~súťažiach,
-získané ocenenia, zahraničné pobyty na~praxi, domácu prax, publikácie
-a~pod.
-\kcurriculumvitae
+%\newpage
+%\phantomsection
+%\protect\label{page:posledna}
+%\curriculumvitae
+%Táto časť je nepovinná. Autor tu môže uviesť svoje biografické
+%údaje, údaje o~záujmoch, účasti na~projektoch, účasti na~súťažiach,
+%získané ocenenia, zahraničné pobyty na~praxi, domácu prax, publikácie
+%a~pod.
+%\kcurriculumvitae
 
 \end{document}
 %%

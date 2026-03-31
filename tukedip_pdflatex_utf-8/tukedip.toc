@@ -1,14 +1,27 @@
 \babel@toc {slovak}{}\relax 
-\contentsline {section}{\numberline {1}Formulácia úlohy}{4}{section.1}%
-\contentsline {section}{\numberline {2}Analýza požiadaviek (Requirements Analysis)}{5}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Používateľské príbehy (User Stories)}{5}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Prípady použitia (Use Cases)}{7}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Use Case Diagram}{9}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Prioritizácia požiadaviek (MoSCoW)}{9}{subsection.2.4}%
-\contentsline {section}{\numberline {3}Jadro práce}{12}{section.3}%
-\contentsline {section}{\numberline {4}Z\'aver (zhodnotenie rie\v {s}enia)}{14}{section.4}%
-\contentsline {section}{\hbox to\@tempdima {\hfil }Zoznam použitej literatúry}{15}{section*.3}%
-\contentsline {section}{\hbox to\@tempdima {\hfil }Zoznam pr\'iloh}{16}{section*.4}%
-\contentsline {section}{\hbox to\@tempdima {\hfil }Príloha A}{17}{section*.5}%
-\contentsline {section}{\hbox to\@tempdima {\hfil }Príloha B}{18}{section*.7}%
-\contentsline {section}{\hbox to\@tempdima {\hfil }Príloha C}{20}{section*.9}%
+\contentsline {section}{\numberline {1}Formulácia úlohy}{5}{section.1}%
+\contentsline {section}{\numberline {2}Analýza požiadaviek (Requirements Analysis)}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Používateľské príbehy (User Stories)}{6}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Prípady použitia (Use Cases)}{8}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Prioritizácia požiadaviek (MoSCoW)}{10}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Use Case Diagram}{10}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Konceptuálny model (Class Diagram)}{12}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Popis tried}{12}{subsection.3.1}%
+\contentsline {section}{\numberline {4}Stavový diagram (State Diagram)}{13}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Stavový diagram relácie (\texttt {Session})}{14}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Stavový diagram záznamu dochádzky (\texttt {AttendanceRecord})}{15}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Stavový diagram zamestnanca (\texttt {Employee})}{16}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Sekvenčný diagram a diagram aktivít (Sequence \& Activity diagram)}{16}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Sekvenčný diagram hlavného procesu (sken QR kódu)}{17}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Diagram aktivít – UC-02 Skenovanie QR kódu}{18}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Diagram aktivít – UC-06 Prehliadanie a filtrovanie dochádzky}{19}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Návrh používateľského rozhrania (UI-design)}{20}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Rozhranie pre zamestnanca}{20}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Administrátorské rozhranie}{20}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Testovanie}{21}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Testovacia stratégia}{21}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Testovacie scenáre (test cases)}{22}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Vlastné riešenie}{24}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Prehľad architektúry}{24}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Hlavné funkcionality}{24}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Použité technológie}{25}{subsection.8.3}%

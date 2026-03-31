@@ -1,0 +1,21 @@
+@startuml
+start
+:Administrátor sa prihlási\n(UC-05);
+:Otvorí prehľad dochádzky;
+:Načítať záznamy z DB;
+:Zobraziť tabuľku záznamov;
+
+repeat
+  :Nastaviť filter\n(meno/dátum/typ);
+  :Odoslať požiadavku na API;
+  :Načítať filtrované záznamy;
+  :Aktualizovať tabuľku;
+repeat while (Chce zmeniť filter?) is (áno)
+
+if (Chce exportovať do XLSX?) then (áno)
+  :Spustiť export (UC-09);
+  :Vygenerovať XLSX zo zobrazených\nfiltrovaných záznamov;
+  :Stiahnuť súbor;
+endif
+stop
+@enduml

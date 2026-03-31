@@ -57,168 +57,51 @@ function authenticateUser($username, $password, $conn)
     return false;
 }
 
-
 ?>
-
-<!-- HTML code for the Login page -->
-<html>
+<!DOCTYPE html>
+<html lang="sk">
 
 <head>
-    <title>ZSI QR · Login</title>
+    <meta charset="utf-8">
+    <title>ZSI QR · Prihlásenie administrátora</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, nofollow">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-        }
-
-        h1 {
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        form {
-            max-width: 300px;
-            margin: 0 auto;
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        label {
-            display: block;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-
-        input[type="text"],
-        input[type="password"] {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-            box-sizing: border-box;
-        }
-
-        input[type="submit"] {
-            width: 100%;
-            padding: 10px;
-            background-color: #4CAF50;
-            color: #fff;
-            border: none;
-            border-radius: 3px;
-            cursor: pointer;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
-
-        p.error-message {
-            color: #ff0000;
-            text-align: center;
-            margin-top: 10px;
-        }
-
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #333;
-            color: white;
-            padding: 15px;
-        }
-
-        .navbar .logo img {
-            width: 180px;
-        }
-
-        .navbar .menu-links {
-            display: flex;
-            gap: 15px;
-        }
-
-        .navbar .menu-links a {
-            color: white;
-            text-decoration: none;
-        }
-
-        .navbar .menu-links a:hover {
-            color: #ddd;
-        }
-
-        .navbar .back-button {
-            background-color: #4caf50;
-            /* Green */
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-        }
-
-        footer {
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #333;
-            color: white;
-            padding: 15px;
-        }
-
-        footer p {
-            margin: 0;
-            text-align: center;
-        }
-
-        footer a {
-            color: white;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            color: #ddd;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 
 <body>
     <div class="navbar">
         <div class="logo">
-            <a href="/admin" style="display:flex;align-items:center;gap:10px;text-decoration:none;"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="3.5" y="3.5" width="2" height="2" fill="#2563eb" stroke="none"/><rect x="14.5" y="3.5" width="2" height="2" fill="#2563eb" stroke="none"/><rect x="3.5" y="14.5" width="2" height="2" fill="#2563eb" stroke="none"/><rect x="14" y="14" width="3" height="3" rx=".5" fill="#2563eb" stroke="none"/><rect x="18" y="14" width="3" height="3" rx=".5" fill="#2563eb" stroke="none"/><rect x="14" y="18" width="3" height="3" rx=".5" fill="#2563eb" stroke="none"/><rect x="18" y="18" width="3" height="3" rx=".5" fill="#2563eb" stroke="none"/></svg><span style="color:#fff;font-size:17px;font-weight:700;letter-spacing:.02em;">ZSI<span style="color:#2563eb;">QR</span></span></a>
+            <a href="/admin/" style="display:flex;align-items:center;gap:10px;text-decoration:none;"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="3.5" y="3.5" width="2" height="2" fill="#2563eb" stroke="none"/><rect x="14.5" y="3.5" width="2" height="2" fill="#2563eb" stroke="none"/><rect x="3.5" y="14.5" width="2" height="2" fill="#2563eb" stroke="none"/><rect x="14" y="14" width="3" height="3" rx=".5" fill="#2563eb" stroke="none"/><rect x="18" y="14" width="3" height="3" rx=".5" fill="#2563eb" stroke="none"/><rect x="14" y="18" width="3" height="3" rx=".5" fill="#2563eb" stroke="none"/><rect x="18" y="18" width="3" height="3" rx=".5" fill="#2563eb" stroke="none"/></svg><span style="color:#fff;font-size:17px;font-weight:700;letter-spacing:.02em;">ZSI<span style="color:#2563eb;">QR</span></span></a>
         </div>
-        <div class="menu-links"><span style="color:#fff;font-weight:700;font-size:15px;letter-spacing:.03em;">ZSI QR &mdash; Attendance Tracker</span></div>
+        <div class="menu-links"><span style="color:#fff;font-weight:700;font-size:15px;letter-spacing:.03em;">ZSI QR &mdash; Administrácia</span></div>
         <div>
-            <a class="back-button" href="/">Back to App</a>
+            <a class="back-button" href="/index.php">Back to App</a>
         </div>
     </div>
 
-    <h1>Login</h1>
-    <?php if (isset($error)) { ?>
-        <p class="error-message"><?php echo $error; ?></p>
-    <?php } ?>
-    <form method="post" action="">
-        <label for="username">Username:</label>
-        <input type="text" name="username" id="username" required>
-        <br>
-        <label for="password">Password:</label>
-        <input type="password" name="password" id="password" required>
-        <br>
-        <input type="submit" value="Login">
-    </form>
+    <div class="page-content">
+        <div class="auth-card">
+            <h1>Prihlásenie administrátora</h1>
+            <p class="auth-sub">Prístup k filtrom dochádzky, exportu a generovaniu QR kódov.</p>
+            <?php if (!empty($error)) { ?>
+                <p class="auth-error"><?php echo htmlspecialchars($error, ENT_QUOTES, 'UTF-8'); ?></p>
+            <?php } ?>
+            <form method="post" action="">
+                <label for="username">Používateľské meno</label>
+                <input type="text" name="username" id="username" required autocomplete="username">
+
+                <label for="password">Heslo</label>
+                <input type="password" name="password" id="password" required autocomplete="current-password">
+
+                <input type="submit" value="Prihlásiť sa">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; <?php echo date('Y'); ?> ZSI — Attendance Tracker</p>
+    </footer>
 </body>
-<footer>
-    <p>&copy; <?php echo date(chr(34)."Y".chr(34)); ?> ZSI QR · Attendance Tracker</p>
-</footer>
 
 </html>

@@ -8,12 +8,34 @@
 \newcounter{plantumlcount}
 \setcounter{plantumlcount}{0}
 
+% JAR s PlantUML (pred \usepackage{plantuml} môžeš v hlavnom .tex súbore urobiť napr.
+% \providecommand{\plantumljarpath}{/cesta/k/plantuml.jar}).
+\providecommand{\plantumljarpath}{plantuml.jar}
+
+% Default size for rendered PlantUML diagrams (can be overridden in document).
+\newcommand{\plantumlwidth}{0.85\linewidth}
+\newcommand{\plantumlheight}{0.75\textheight}
+\newcommand{\plantumlsetsize}[2]{%
+  \renewcommand{\plantumlwidth}{#1}%
+  \renewcommand{\plantumlheight}{#2}%
+}
+
 % Prefer common macOS Graphviz locations. If none exist, PlantUML will render an error image.
 % We instead show a LaTeX box with install instructions.
 \newcommand{\plantuml@dotpath}{}
 \IfFileExists{/opt/homebrew/bin/dot}{\renewcommand{\plantuml@dotpath}{/opt/homebrew/bin/dot}}{}
 \IfFileExists{/usr/local/bin/dot}{\renewcommand{\plantuml@dotpath}{/usr/local/bin/dot}}{}
 \IfFileExists{/opt/local/bin/dot}{\renewcommand{\plantuml@dotpath}{/opt/local/bin/dot}}{}
+
+% Prefer explicit Homebrew OpenJDK binary; GUI nástroje často nemajú java v PATH.
+\newcommand{\plantuml@java}{java}
+\IfFileExists{/opt/homebrew/opt/openjdk/bin/java}{%
+  \renewcommand{\plantuml@java}{/opt/homebrew/opt/openjdk/bin/java}%
+}{%
+  \IfFileExists{/opt/homebrew/opt/openjdk/libexec/openjdk.jdk/Contents/Home/bin/java}{%
+    \renewcommand{\plantuml@java}{/opt/homebrew/opt/openjdk/libexec/openjdk.jdk/Contents/Home/bin/java}%
+  }{}%
+}
 
 \newenvironment{plantuml}{%
   \stepcounter{plantumlcount}%
@@ -26,11 +48,15 @@
     Chýba Graphviz (\texttt{dot}). Nainštaluj Graphviz a~znovu prekompiluj.\\
     macOS (Homebrew): \texttt{brew install graphviz}}}%
   \else
-    \immediate\write18{java -jar /Users/martinoros/bin/plantuml.jar -graphvizdot "\plantuml@dotpath" -png \plantuml@base.puml 2>/dev/null}%
+    \immediate\write18{\plantuml@java\space -jar \plantumljarpath\space -graphvizdot \plantuml@dotpath\space -png \plantuml@base.puml}%
     \IfFileExists{\plantuml@base.png}{%
-      \includegraphics[width=0.85\linewidth,height=0.75\textheight,keepaspectratio]{\plantuml@base.png}%
+      \includegraphics[width=\plantumlwidth,height=\plantumlheight,keepaspectratio]{\plantuml@base.png}%
     }{%
-      \fbox{\texttt{[Run pdflatex with --shell-escape to render PlantUML diagram]}}%
+      \fbox{\parbox{0.92\linewidth}{\textbf{Diagram sa nepodarilo vykresliť.}\\
+      Skús znova spustiť \texttt{pdflatex} s prepínačom \texttt{-{}-shell-escape} (príp. \texttt{-{}-enable-write18}).\\
+      Potrebné sú Java (\texttt{brew install openjdk}), Graphviz (\texttt{brew install graphviz}) a \texttt{plantuml.jar}.\\
+      Cestu k JAR nastav makrom \texttt{\textbackslash plantumljarpath} v \texttt{tukedip.tex}.\\
+      Ak už máš vygenerovaný súbor \texttt{\plantuml@base.png}, ulož ho vedľa \texttt{.tex} a znovu prelož dokument.}}%
     }%
   \fi
 }

@@ -1,0 +1,20 @@
+@startuml
+start
+:Prihlásený zamestnanec otvorí\nstránku skenovania;
+:Aplikácia inicializuje kameru;
+if (Kamera dostupná?) then (áno)
+  :Zamestnanec nasmeruje\nkameru na QR kód;
+  :Snímka -> dekódovanie QR;
+  if (QR je platný?) then (áno)
+    :Odoslať scan na server;
+    :Server určí typ záznamu\n(príchod/odchod);
+    :Uložiť záznam do DB;
+    :Zobraziť potvrdenie\n(typ, čas);
+  else (nie)
+    :Zobraziť chybu\n(neplatný QR);
+  endif
+else (nie)
+  :Zobraziť chybu\n(kamera nedostupná);
+endif
+stop
+@enduml

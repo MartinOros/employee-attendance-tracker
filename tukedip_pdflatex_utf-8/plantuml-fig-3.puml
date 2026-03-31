@@ -1,0 +1,14 @@
+@startuml
+skinparam state {
+  BackgroundColor #EEF4FB
+  BorderColor #2C6DAD
+  ArrowColor #2C6DAD
+}
+
+[*] --> Created : createSession()
+Created --> Active : loginSuccess
+Active --> Expired : expiresAt reached
+Active --> Terminated : logout
+Expired --> [*]
+Terminated --> [*]
+@enduml
