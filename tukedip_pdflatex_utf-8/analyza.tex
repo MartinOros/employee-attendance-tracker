@@ -112,78 +112,66 @@ Prípady použitia podrobnejšie opisujú interakcie aktérov so systémom vrát
 predpodmienok a~očakávaných výsledkov. Prehľad prípadov použitia je uvedený
 v~Tabuľke~\ref{t:use-cases}.
 
-\begin{landscape}
-\renewcommand{\arraystretch}{1.25}
-\setlength{\tabcolsep}{4pt}
-\small
-\begin{longtable}{|p{1.3cm}|p{3.8cm}|p{3.4cm}|p{7.0cm}|p{6.0cm}|p{6.0cm}|}
+\renewcommand{\arraystretch}{1.12}
+\setlength{\tabcolsep}{3pt}
+\footnotesize
+\begin{longtable}{|p{1.1cm}|p{3.2cm}|p{6.2cm}|p{4.2cm}|}
 \caption{Prípady použitia}\label{t:use-cases}\\
 \hline
-\textbf{ID} & \textbf{Názov} & \textbf{Aktér} & \textbf{Popis} & \textbf{Predpodmienka} & \textbf{Výsledok} \\
+\textbf{ID} & \textbf{Názov} & \textbf{Popis} & \textbf{Poznámka} \\
 \hline
 \endfirsthead
 \hline
-\textbf{ID} & \textbf{Názov} & \textbf{Aktér} & \textbf{Popis} & \textbf{Predpodmienka} & \textbf{Výsledok} \\
+\textbf{ID} & \textbf{Názov} & \textbf{Popis} & \textbf{Poznámka} \\
 \hline
 \endhead
-UC-01 & Prihlásenie zamestnanca & Zamestnanec &
+UC-01 & Prihlásenie zamestnanca &
 Zamestnanec zadá svoje meno a~heslo na prihlasovacej stránke aplikácie. &
-Zamestnanec má platný účet v~systéme. &
-Zamestnanec je prihlásený a~presmerovaný na stránku skenovania. \\
+Aktér: Zamestnanec. Pred: platný účet. Výs: prihlásený, presmerovaný na skenovanie. \\
 \hline
-UC-02 & Skenovanie QR kódu & Zamestnanec &
+UC-02 & Skenovanie QR kódu &
 Zamestnanec nasmeruje kameru zariadenia na vytlačený QR kód; systém ho
 automaticky rozpozná pomocou knižnice jsQR.js. &
-Zamestnanec je prihlásený; zariadenie má funkčnú kameru. &
-Záznam príchodu alebo odchodu je uložený v~databáze s~časovou pečiatkou. \\
+Aktér: Zamestnanec. Pred: prihlásený, funkčná kamera. Výs: uložený príchod/odchod s~časovou pečiatkou. \\
 \hline
-UC-03 & Zobrazenie potvrdenia & Zamestnanec &
+UC-03 & Zobrazenie potvrdenia &
 Po úspešnom skene systém zobrazí potvrdzovaciu správu s~typom záznamu a~časom. &
-QR kód bol úspešne rozpoznaný (UC-02). &
-Zamestnanec vidí vizuálne potvrdenie záznamu. \\
+Aktér: Zamestnanec. Pred: úspešný sken (UC-02). Výs: vizuálne potvrdenie záznamu. \\
 \hline
-UC-04 & Odhlásenie & Zamestnanec / Administrátor &
+UC-04 & Odhlásenie &
 Používateľ klikne na tlačidlo odhlásenia; systém zruší reláciu. &
-Používateľ je prihlásený. &
-Relácia je zrušená; používateľ je presmerovaný na prihlasovaciu stránku. \\
+Aktér: Zamestnanec/Administrátor. Pred: prihlásený. Výs: relácia zrušená, presmerovaný na prihlásenie. \\
 \hline
-UC-05 & Prihlásenie administrátora & Administrátor &
+UC-05 & Prihlásenie administrátora &
 Administrátor zadá svoje prihlasovacie údaje na osobitnej admin prihlasovacej
 stránke. &
-Administrátor má platný admin účet. &
-Administrátor je prihlásený a~presmerovaný na admin dashboard. \\
+Aktér: Administrátor. Pred: platný admin účet. Výs: prihlásený, presmerovaný na admin dashboard. \\
 \hline
-UC-06 & Prehliadanie a~filtrovanie dochádzky & Administrátor &
+UC-06 & Prehliadanie a~filtrovanie dochádzky &
 Administrátor prezerá tabuľku dochádzky a~aplikuje filtre podľa mena zamestnanca,
 dátumového rozsahu alebo typu záznamu. &
-Administrátor je prihlásený (UC-05). &
-Tabuľka zobrazí iba záznamy zodpovedajúce zvoleným filtrom. \\
+Aktér: Administrátor. Pred: prihlásený (UC-05). Výs: zobrazené záznamy podľa filtra. \\
 \hline
-UC-07 & Úprava záznamu dochádzky & Administrátor &
+UC-07 & Úprava záznamu dochádzky &
 Administrátor vyberie konkrétny záznam a~upraví jeho hodnoty (typ, čas) cez
 editačný formulár. &
-Administrátor je prihlásený; záznam existuje v~databáze. &
-Zmenené údaje sú uložené v~databáze a~zobrazené v~tabuľke. \\
+Aktér: Administrátor. Pred: prihlásený, záznam existuje. Výs: údaje uložené a~zobrazené. \\
 \hline
-UC-08 & Vymazanie záznamu dochádzky & Administrátor &
+UC-08 & Vymazanie záznamu dochádzky &
 Administrátor vyberie záznam na vymazanie a~potvrdí akciu. &
-Administrátor je prihlásený; záznam existuje v~databáze. &
-Záznam je trvalo odstránený z~databázy. \\
+Aktér: Administrátor. Pred: prihlásený, záznam existuje. Výs: záznam odstránený. \\
 \hline
-UC-09 & Export do Excelu & Administrátor &
+UC-09 & Export do Excelu &
 Administrátor klikne na tlačidlo exportu; systém vygeneruje XLSX súbor
 s~aktuálne zobrazenými záznamami. &
-Administrátor je prihlásený; existujú záznamy na export. &
-Súbor XLSX je stiahnutý do zariadenia administrátora. \\
+Aktér: Administrátor. Pred: prihlásený, existujú záznamy. Výs: XLSX stiahnutý. \\
 \hline
-UC-10 & Generovanie QR kódu & Administrátor &
+UC-10 & Generovanie QR kódu &
 Administrátor vyberie zamestnanca a~nechá systém vygenerovať jeho unikátny QR
 kód pomocou knižnice chillerlan/php-qrcode. &
-Administrátor je prihlásený; zamestnanec je evidovaný v~systéme. &
-QR kód je vygenerovaný, uložený a~dostupný na stiahnutie alebo tlač. \\
+Aktér: Administrátor. Pred: prihlásený, zamestnanec evidovaný. Výs: QR kód vygenerovaný a dostupný. \\
 \hline
 \end{longtable}
-\end{landscape}
 
 % -----------------------------------------------------------------------
 \subsection{Use Case Diagram}

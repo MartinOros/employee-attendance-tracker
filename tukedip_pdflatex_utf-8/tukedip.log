@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.7)  31 MAR 2026 21:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.7)  31 MAR 2026 21:57
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -686,103 +686,194 @@ File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 
 
 ]
-ignored error: Infinite glue shrinkage found in box being split [6] [7]
-Overfull \hbox (207.29005pt too wide) in alignment at lines 119--124
- [] [] [] [] [] [] 
+ignored error: Infinite glue shrinkage found in box being split [6]
+Overfull \hbox (17.46404pt too wide) in alignment at lines 118--123
+ [] [] [] [] 
  []
 
 
-Overfull \hbox (207.29005pt too wide) in alignment at lines 124--128
- [] [] [] [] [] [] 
+Overfull \hbox (17.46404pt too wide) in alignment at lines 123--127
+ [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--129
-[]|\T1/lmr/m/n/10.95 Prihlásenie za-mest-
+Underfull \hbox (badness 5460) in paragraph at lines 128--128
+[]|\T1/lmr/m/n/10 Prihlásenie za-mest-
  []
 
 
-Underfull \hbox (badness 1092) in paragraph at lines 135--136
-\T1/lmr/m/n/10.95 nia na vy-tla-£ený QR kód; sys-tém ho
+Underfull \hbox (badness 1642) in paragraph at lines 130--131
+\T1/lmr/m/n/10 platný ú£et. Výs: pri-hlá-
  []
 
 
-Underfull \hbox (badness 1028) in paragraph at lines 142--142
-[]|\T1/lmr/m/n/10.95 QR kód bol úspe²ne roz-poz-naný
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
+[]|\T1/lmr/m/n/10 Aktér: Za-mest-na-nec.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--150
-[]|\T1/lmr/m/n/10.95 Prihlásenie ad-mi-nis-
+Underfull \hbox (badness 1762) in paragraph at lines 135--136
+\T1/lmr/m/n/10 Pred: pri-hlá-sený, funk£ná
  []
 
 
-Underfull \hbox (badness 1655) in paragraph at lines 151--152
-[]|\T1/lmr/m/n/10.95 Administrátor zadá svoje pri-hla-so-va-cie
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
+\T1/lmr/m/n/10 chod/odchod s £a-so-vou
  []
 
 
-Underfull \hbox (badness 3148) in paragraph at lines 153--153
-[]|\T1/lmr/m/n/10.95 Administrátor má platný ad-min
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
+\T1/lmr/m/n/10 úspe²ný sken (UC-02).
  []
 
 
-Underfull \hbox (badness 1783) in paragraph at lines 162--162
-[]|\T1/lmr/m/n/10.95 Úprava zá-znamu do-
+Underfull \hbox (badness 3930) in paragraph at lines 139--140
+\T1/lmr/m/n/10 Výs: vi-zu-álne po-tvr-de-nie
  []
 
 
-Underfull \hbox (badness 3612) in paragraph at lines 165--165
-[]|\T1/lmr/m/n/10.95 Administrátor je pri-hlá-sený; zá-
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
+[]|\T1/lmr/m/n/10 Aktér: Za-mest-na-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--168
-[]|\T1/lmr/m/n/10.95 Vymazanie zá-znamu
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
+\T1/lmr/m/n/10 nec/Administrátor. Pred:
  []
 
 
-Underfull \hbox (badness 3612) in paragraph at lines 170--170
-[]|\T1/lmr/m/n/10.95 Administrátor je pri-hlá-sený; zá-
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
+\T1/lmr/m/n/10 pri-hlá-sený. Výs: re-lá-cia
  []
 
 
-Underfull \hbox (badness 1152) in paragraph at lines 180--181
-\T1/lmr/m/n/10.95 chá sys-tém vy-ge-ne-ro-va´ jeho uni-kátny
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
+[]|\T1/lmr/m/n/10 Aktér: Ad-mi-nis-trá-tor.
  []
 
 
-Underfull \hbox (badness 3612) in paragraph at lines 182--182
-[]|\T1/lmr/m/n/10.95 Administrátor je pri-hlá-sený; za-
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
+[]|\T1/lmr/m/n/10 Administrátor pre-zerá ta-bu©ku do-
  []
 
 
-Overfull \hbox (207.29005pt too wide) in alignment at lines 128--185
- [] [] [] [] [] [] 
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
+[]|\T1/lmr/m/n/10 Aktér: Ad-mi-nis-trá-tor.
  []
 
-[8
 
-] [9]
+Underfull \hbox (badness 6316) in paragraph at lines 153--154
+\T1/lmr/m/n/10 Výs: zo-bra-zené zá-znamy
+ []
+
+
+Underfull \hbox (badness 3417) in paragraph at lines 156--157
+[]|\T1/lmr/m/n/10 Administrátor vy-be-rie kon-krétny zá-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
+[]|\T1/lmr/m/n/10 Aktér: Ad-mi-nis-trá-tor.
+ []
+
+
+Underfull \hbox (badness 2744) in paragraph at lines 158--159
+\T1/lmr/m/n/10 Pred: pri-hlá-sený, zá-znam
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
+[]|\T1/lmr/m/n/10 Aktér: Ad-mi-nis-trá-tor.
+ []
+
+
+Underfull \hbox (badness 2744) in paragraph at lines 162--163
+\T1/lmr/m/n/10 Pred: pri-hlá-sený, zá-znam
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
+\T1/lmr/m/n/10 exis-tuje. Výs: zá-znam
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--168
+[]|\T1/lmr/m/n/10 Aktér: Ad-mi-nis-trá-tor.
+ []
+
+
+Underfull \hbox (badness 1565) in paragraph at lines 167--168
+\T1/lmr/m/n/10 Pred: pri-hlá-sený, exis-tujú
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--168
+\T1/lmr/m/n/10 zá-znamy. Výs: XLSX
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--169
+[]|\T1/lmr/m/n/10 Generovanie QR
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
+[]|\T1/lmr/m/n/10 Administrátor vy-be-rie za-mest-nanca
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
+\T1/lmr/m/n/10 a ne-chá sys-tém vy-ge-ne-ro-va´ jeho
+ []
+
+
+Underfull \hbox (badness 2229) in paragraph at lines 170--171
+\T1/lmr/m/n/10 uni-kátny QR kód po-mo-cou kniº-nice
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+[]|\T1/lmr/m/n/10 Aktér: Ad-mi-nis-trá-tor.
+ []
+
+
+Underfull \hbox (badness 2277) in paragraph at lines 172--173
+\T1/lmr/m/n/10 Pred: pri-hlá-sený, za-mest-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+\T1/lmr/m/n/10 na-nec evi-do-vaný. Výs:
+ []
+
+
+Underfull \hbox (badness 2495) in paragraph at lines 172--173
+\T1/lmr/m/n/10 QR kód vy-ge-ne-ro-vaný a
+ []
+
+
+Overfull \hbox (17.46404pt too wide) in alignment at lines 127--174
+ [] [] [] [] 
+ []
+
+ignored error: Infinite glue shrinkage found in box being split [7]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-94.
- (/usr/local/texlive/2025basic/texmf-dist/tex/latex/lm/t1lmtt.fd
+82.
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
+) [8]
 \openout3 = `plantuml-fig-1.puml'.
 
 runsystem(java -jar /Users/martinoros/bin/plantuml.jar -png plantuml-fig-1.puml
  2>/dev/null)...executed.
 
-<plantuml-fig-1.png, id=120, 280.04625pt x 207.77625pt>
+<plantuml-fig-1.png, id=116, 280.04625pt x 207.77625pt>
 File: plantuml-fig-1.png Graphic file (type png)
 <use plantuml-fig-1.png>
-Package pdftex.def Info: plantuml-fig-1.png  used on input line 254.
+Package pdftex.def Info: plantuml-fig-1.png  used on input line 242.
 (pdftex.def)             Requested size: 426.79134pt x 316.66649pt.
-)
-[10
-
- <./plantuml-fig-1.png (PNG copy)>]
+) [9 <./plantuml-fig-1.png (PNG copy)>]
 \openout2 = `jadroprace.aux'.
 
  (./jadroprace.tex
@@ -794,9 +885,9 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 8.
 
 
-LaTeX Warning: Reference `o:2' on page 11 undefined on input line 13.
+LaTeX Warning: Reference `o:2' on page 10 undefined on input line 13.
 
-<figures/relaxcas.pdf, id=128, 386.44376pt x 307.1475pt>
+<figures/relaxcas.pdf, id=124, 386.44376pt x 307.1475pt>
 File: figures/relaxcas.pdf Graphic file (type pdf)
 <use figures/relaxcas.pdf>
 Package pdftex.def Info: figures/relaxcas.pdf  used on input line 17.
@@ -951,22 +1042,22 @@ Package hhline Warning: macro:->\active@prefix -\normal@char-  ignored in \hhli
 ne argument
 (hhline)                 on input line 45.
 
-) [11
+) [10
 
 
 
 {/usr/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} <./f
-igures/relaxcas.pdf>] [12]
+igures/relaxcas.pdf>] [11]
 \openout2 = `zaver.aux'.
 
- (./zaver.tex) [13
+ (./zaver.tex) [12
 
 
 
 ]
 \openout2 = `literatura.aux'.
 
- (./literatura.tex) [14
+ (./literatura.tex) [13
 
 
 
@@ -974,14 +1065,14 @@ igures/relaxcas.pdf>] [12]
 \openout2 = `prilohy.aux'.
 
 
-(./prilohy.tex) [15
+(./prilohy.tex) [14
 
 
 
 ]
 \openout2 = `prilohaa.aux'.
 
- (./prilohaa.tex) [16
+ (./prilohaa.tex) [15
 
 
 
@@ -994,11 +1085,11 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
 
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [17
+) [16
 
 
 
-{/usr/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]) [18]
+{/usr/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]) [17]
 \openout2 = `prilohac.aux'.
 
 
@@ -1009,11 +1100,11 @@ T1/lmr/m/n/10 10\OML/lmm/m/it/10 :\OT1/lmr/m/n/10 04$ \T1/lmr/m/n/10 a ver-ziou
  [][]\T1/lmtt/m/n/10 texlive 2009-7
  []
 
-) [19
+) [18
 
 
 
-] [20
+] [19
 
 
 ] (./tukedip.aux (./formulacia.aux) (./analyza.aux) (./jadroprace.aux) (./zaver
@@ -1031,13 +1122,13 @@ Package rerunfilecheck Info: File `tukedip.out' has not changed.
 (rerunfilecheck)             Checksum: 704AC914D155C1AD5738446365D16694;2082.
  ) 
 Here is how much of TeX's memory you used:
- 13166 strings out of 468991
- 206494 string characters out of 5454207
- 639147 words of memory out of 5000000
- 41496 multiletter control sequences out of 15000+600000
- 709638 words of font info for 99 fonts, out of 8000000 for 9000
+ 13162 strings out of 468991
+ 206408 string characters out of 5454207
+ 638111 words of memory out of 5000000
+ 41493 multiletter control sequences out of 15000+600000
+ 706643 words of font info for 98 fonts, out of 8000000 for 9000
  324 hyphenation exceptions out of 8191
- 75i,16n,79p,336b,682s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,16n,79p,336b,605s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></u
 sr/local/texlive/2025basic/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/lo
 cal/texlive/2025basic/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/t
@@ -1052,10 +1143,10 @@ ublic/lm/lmsy10.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public
 /lm/lmsy7.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/lm/lm
 sy8.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/lm/lmtt10.p
 fb>
-Output written on tukedip.pdf (20 pages, 324250 bytes).
+Output written on tukedip.pdf (19 pages, 322596 bytes).
 PDF statistics:
- 302 PDF objects out of 1000 (max. 8388607)
- 240 compressed objects within 3 object streams
- 60 named destinations out of 1000 (max. 500000)
+ 298 PDF objects out of 1000 (max. 8388607)
+ 237 compressed objects within 3 object streams
+ 59 named destinations out of 1000 (max. 500000)
  107 words of extra memory for PDF output out of 10000 (max. 10000000)
 
