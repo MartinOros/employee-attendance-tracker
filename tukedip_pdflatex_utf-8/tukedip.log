@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.7)  31 MAR 2026 21:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.7)  31 MAR 2026 21:52
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  %&-line parsing enabled.
 **tukedip.tex
 (./tukedip.tex
@@ -241,33 +241,108 @@ Package: nicefrac 1998/08/04 v0.9b Nice fractions
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 ))
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen163
+\lightrulewidth=\dimen164
+\cmidrulewidth=\dimen165
+\belowrulesep=\dimen166
+\belowbottomsep=\dimen167
+\aboverulesep=\dimen168
+\abovetopsep=\dimen169
+\cmidrulesep=\dimen170
+\cmidrulekern=\dimen171
+\defaultaddspace=\dimen172
+\@cmidla=\count298
+\@cmidlb=\count299
+\@aboverulesep=\dimen173
+\@belowrulesep=\dimen174
+\@thisruleclass=\count300
+\@lastruleclass=\count301
+\@thisrulewidth=\dimen175
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+\TX@col@width=\dimen176
+\TX@old@table=\dimen177
+\TX@old@col=\dimen178
+\TX@target=\dimen179
+\TX@delta=\dimen180
+\TX@cols=\count302
+\TX@ftn=\toks26
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
+\LTleft=\skip59
+\LTright=\skip60
+\LTpre=\skip61
+\LTpost=\skip62
+\LTchunksize=\count303
+\LTcapwidth=\dimen181
+\LT@head=\box57
+\LT@firsthead=\box58
+\LT@foot=\box59
+\LT@lastfoot=\box60
+\LT@gbox=\box61
+\LT@cols=\count304
+\LT@rows=\count305
+\c@LT@tables=\count306
+\c@LT@chunks=\count307
+\LT@p@ftn=\toks27
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2025-06-23 v0.14 Display of landscape pages in PDF
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/pdflscape/pdflscape-nometada
+ta.sty
+Package: pdflscape-nometadata 2025-06-23 v0.14 Display of landscape pages in PD
+F (HO)
+ (/usr/local/texlive/2025basic/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+(/Users/martinoros/Library/texmf/tex/latex/plantuml/plantuml.sty
+Package: plantuml 2024/01/01 PlantUML integration
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2025/07/28 4.6 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count308
+\FV@InFile=\read3
+\FV@TabBox=\box62
+\c@FancyVerbLine=\count309
+\FV@StepNumber=\count310
+\FV@OutFile=\write3
+)
+\c@plantumlcount=\count311
+)
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/tools/showkeys.sty
 Package: showkeys 2024/05/23 v3.21 Show cite and label keys (DPC, MH)
 )
 (./nomencl.sty
 Package: nomencl 2000/12/03 v3.1a Nomenclature package (BS)
-\nomlabelwidth=\dimen163
-\nom@tempdim=\dimen164
-\nomitemsep=\skip59
+\nomlabelwidth=\dimen182
+\nom@tempdim=\dimen183
+\nomitemsep=\skip63
 )
-\@glossaryfile=\write3
-\openout3 = `tukedip.glo'.
+\@glossaryfile=\write4
+\openout4 = `tukedip.glo'.
 
 
 Writing glossary file tukedip.glo
 (./natbib.sty
 Package: natbib 1999/05/28 7.0 (PWD)
-\bibhang=\skip60
-\bibsep=\skip61
+\bibhang=\skip64
+\bibsep=\skip65
 LaTeX Info: Redefining \cite on input line 508.
-\c@NAT@ctr=\count298
+\c@NAT@ctr=\count312
 )
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2026-01-29 v7.01p Hypertext links for LaTeX
 
-(/usr/local/texlive/2025basic/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2024/12/12 v1.0g TeX engine tests
-)
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )
@@ -307,19 +382,19 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count299
+\c@section@level=\count313
 )
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count300
+\etb@tempcnta=\count314
 )
 (/usr/local/texlive/2025basic/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
-\@linkdim=\dimen165
-\Hy@linkcounter=\count301
-\Hy@pagecounter=\count302
+\@linkdim=\dimen184
+\Hy@linkcounter=\count315
+\Hy@pagecounter=\count316
 
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2026-01-29 v7.01p Hyperref: PDFDocEncoding definition (HO)
@@ -329,7 +404,7 @@ Now handling font encoding PD1 ...
 (/usr/local/texlive/2025basic/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count303
+\Hy@SavedSpaceFactor=\count317
 
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2026-01-29 v7.01p Hyperref: PDF Unicode definition (HO)
@@ -350,14 +425,14 @@ Package hyperref Info: Plain pages OFF on input line 4216.
 Package hyperref Info: Backreferencing OFF on input line 4221.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4468.
-\c@Hy@tempcnt=\count304
+\c@Hy@tempcnt=\count318
 
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4807.
-\XeTeXLinkMargin=\dimen166
+\XeTeXLinkMargin=\dimen185
 
 (/usr/local/texlive/2025basic/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -366,9 +441,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count305
-\Field@Width=\dimen167
-\Fld@charsize=\dimen168
+\Fld@menulength=\count319
+\Field@Width=\dimen186
+\Fld@charsize=\dimen187
 Package hyperref Info: Hyper figures OFF on input line 6084.
 Package hyperref Info: Link nesting OFF on input line 6089.
 Package hyperref Info: Hyper index ON on input line 6092.
@@ -376,15 +451,15 @@ Package hyperref Info: backreferencing OFF on input line 6099.
 Package hyperref Info: Link coloring OFF on input line 6104.
 Package hyperref Info: Link coloring with OCG OFF on input line 6109.
 Package hyperref Info: PDF/A mode OFF on input line 6114.
-\Hy@abspage=\count306
-\c@Item=\count307
-\c@Hfootnote=\count308
+\Hy@abspage=\count320
+\c@Item=\count321
+\c@Hfootnote=\count322
 )
 Package hyperref Info: Driver: hpdftex.
  (/usr/local/texlive/2025basic/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2026-01-29 v7.01p Hyperref driver for pdfTeX
-\Fld@listcount=\count309
-\c@bookmark@seq@number=\count310
+\Fld@listcount=\count323
+\c@bookmark@seq@number=\count324
 
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/rerunfilecheck/rerunfilechec
 k.sty
@@ -397,17 +472,17 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 84.
 )
-\Hy@SectionHShift=\skip62
+\Hy@SectionHShift=\skip66
 )
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 12
-7.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 13
+3.
  (/usr/local/texlive/2025basic/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/l3backend/l3backend-pdftex.d
 ef
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count311
+\l__color_backend_stack_int=\count325
 ) (./tukedip.aux
 Package babel Info: 'slovak' activates 'slovak' shorthands.
 (babel)             Reported on input line 12.
@@ -416,38 +491,38 @@ Package babel Info: 'slovak' activates 'slovak' shorthands.
 (./prilohab.aux) (./prilohac.aux))
 \openout1 = `tukedip.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
 
 (/usr/local/texlive/2025basic/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count312
-\scratchdimen=\dimen169
-\scratchbox=\box57
-\nofMPsegments=\count313
-\nofMParguments=\count314
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count315
-\MPscratchDim=\dimen170
-\MPnumerator=\count316
-\makeMPintoPDFobject=\count317
-\everyMPtoPDFconversion=\toks27
+\scratchcounter=\count326
+\scratchdimen=\dimen188
+\scratchbox=\box63
+\nofMPsegments=\count327
+\nofMParguments=\count328
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count329
+\MPscratchDim=\dimen189
+\MPnumerator=\count330
+\makeMPintoPDFobject=\count331
+\everyMPtoPDFconversion=\toks29
 )
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.s
 ty
@@ -459,10 +534,10 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 127.
+Package hyperref Info: Link coloring OFF on input line 133.
  (./tukedip.out) (./tukedip.out)
-\@outlinefile=\write4
-\openout4 = `tukedip.out'.
+\@outlinefile=\write5
+\openout5 = `tukedip.out'.
 
 
 
@@ -517,13 +592,13 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
-\tf@toc=\write5
-\openout5 = `tukedip.toc'.
+\tf@toc=\write6
+\openout6 = `tukedip.toc'.
 
  [2]
 (./tukedip.lot)
-\tf@lot=\write6
-\openout6 = `tukedip.lot'.
+\tf@lot=\write7
+\openout7 = `tukedip.lot'.
 
  [3{/usr/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/
 usr/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
@@ -536,14 +611,73 @@ No file tukedip.gls.
 \openout2 = `analyza.aux'.
 
  (./analyza.tex
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
-9.
+Overfull \hbox (14.61858pt too wide) in alignment at lines 35--40
+ [] [] [] [] 
+ []
 
-(/usr/local/texlive/2025basic/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 6
-5.
+
+Overfull \hbox (14.61858pt too wide) in alignment at lines 40--44
+ [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 52--53
+\T1/lmr/m/n/10 za-ria-de-nia, aby bol môj prí-chod
+ []
+
+
+Underfull \hbox (badness 2393) in paragraph at lines 54--56
+[]|\T1/lmr/m/n/10 Systém roz-pozná QR kód, ur£í
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--56
+\T1/lmr/m/n/10 správny typ zá-znamu (prí-
+ []
+
+
+Underfull \hbox (badness 7814) in paragraph at lines 58--59
+\T1/lmr/m/n/10 zna-me-naní prí-chodu alebo od-
+ []
+
+
+Underfull \hbox (badness 3302) in paragraph at lines 72--74
+[]|\T1/lmr/m/n/10 Administrátorský ú£et umoº-¬uje
+ []
+
+
+Underfull \hbox (badness 3312) in paragraph at lines 79--81
+\T1/lmr/m/n/10 fil-tro-va-nie vra-cia iba re-le-vantné
+ []
+
+
+Underfull \hbox (badness 3449) in paragraph at lines 83--84
+[]|\T1/lmr/m/n/10 Ako ad-mi-nis-trá-tor chcem upra-
+ []
+
+
+Underfull \hbox (badness 1275) in paragraph at lines 83--84
+\T1/lmr/m/n/10 vo-va´ alebo ma-za´ zá-znamy do-
+ []
+
+
+Underfull \hbox (badness 1048) in paragraph at lines 97--99
+[]|\T1/lmr/m/n/10 Vygenerovaný QR kód je jed-no-
+ []
+
+
+Underfull \hbox (badness 5592) in paragraph at lines 103--105
+\T1/lmr/m/n/10 ak-ti-vo-vaný za-mest-na-nec ne-môºe
+ []
+
+
+Overfull \hbox (14.61858pt too wide) in alignment at lines 44--106
+ [] [] [] [] 
+ []
+
+ignored error: Infinite glue shrinkage found in box being split
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1
+06.
 
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -551,52 +685,122 @@ File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 
 
 
-{/usr/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
-<figures/tlmosc.pdf, id=100, 375.4025pt x 309.155pt>
-File: figures/tlmosc.pdf Graphic file (type pdf)
-<use figures/tlmosc.pdf>
-Package pdftex.def Info: figures/tlmosc.pdf  used on input line 69.
-(pdftex.def)             Requested size: 298.75262pt x 246.04593pt.
-) [6 <./figures/tlmosc.pdf>]
+]
+ignored error: Infinite glue shrinkage found in box being split [6] [7]
+Overfull \hbox (207.29005pt too wide) in alignment at lines 119--124
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (207.29005pt too wide) in alignment at lines 124--128
+ [] [] [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
+[]|\T1/lmr/m/n/10.95 Prihlásenie za-mest-
+ []
+
+
+Underfull \hbox (badness 1092) in paragraph at lines 135--136
+\T1/lmr/m/n/10.95 nia na vy-tla-£ený QR kód; sys-tém ho
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 142--142
+[]|\T1/lmr/m/n/10.95 QR kód bol úspe²ne roz-poz-naný
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--150
+[]|\T1/lmr/m/n/10.95 Prihlásenie ad-mi-nis-
+ []
+
+
+Underfull \hbox (badness 1655) in paragraph at lines 151--152
+[]|\T1/lmr/m/n/10.95 Administrátor zadá svoje pri-hla-so-va-cie
+ []
+
+
+Underfull \hbox (badness 3148) in paragraph at lines 153--153
+[]|\T1/lmr/m/n/10.95 Administrátor má platný ad-min
+ []
+
+
+Underfull \hbox (badness 1783) in paragraph at lines 162--162
+[]|\T1/lmr/m/n/10.95 Úprava zá-znamu do-
+ []
+
+
+Underfull \hbox (badness 3612) in paragraph at lines 165--165
+[]|\T1/lmr/m/n/10.95 Administrátor je pri-hlá-sený; zá-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--168
+[]|\T1/lmr/m/n/10.95 Vymazanie zá-znamu
+ []
+
+
+Underfull \hbox (badness 3612) in paragraph at lines 170--170
+[]|\T1/lmr/m/n/10.95 Administrátor je pri-hlá-sený; zá-
+ []
+
+
+Underfull \hbox (badness 1152) in paragraph at lines 180--181
+\T1/lmr/m/n/10.95 chá sys-tém vy-ge-ne-ro-va´ jeho uni-kátny
+ []
+
+
+Underfull \hbox (badness 3612) in paragraph at lines 182--182
+[]|\T1/lmr/m/n/10.95 Administrátor je pri-hlá-sený; za-
+ []
+
+
+Overfull \hbox (207.29005pt too wide) in alignment at lines 128--185
+ [] [] [] [] [] [] 
+ []
+
+[8
+
+] [9]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
+94.
+ (/usr/local/texlive/2025basic/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+\openout3 = `plantuml-fig-1.puml'.
+
+runsystem(java -jar /Users/martinoros/bin/plantuml.jar -png plantuml-fig-1.puml
+ 2>/dev/null)...executed.
+
+<plantuml-fig-1.png, id=120, 280.04625pt x 207.77625pt>
+File: plantuml-fig-1.png Graphic file (type png)
+<use plantuml-fig-1.png>
+Package pdftex.def Info: plantuml-fig-1.png  used on input line 254.
+(pdftex.def)             Requested size: 426.79134pt x 316.66649pt.
+)
+[10
+
+ <./plantuml-fig-1.png (PNG copy)>]
 \openout2 = `jadroprace.aux'.
 
  (./jadroprace.tex
-pdfTeX warning (ext4): destination with the same identifier (name{equation.1}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.8 \begin{equation}
-                    \label{r:2}
-pdfTeX warning (ext4): destination with the same identifier (name{equation.1}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.8 \begin{equation}
-                    \label{r:2}
-pdfTeX warning (ext4): destination with the same identifier (name{equation.1}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.8 \begin{equation}
-                    \label{r:2}
-pdfTeX warning (ext4): destination with the same identifier (name{equation.1}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.8 \begin{equation}
-                    \label{r:2}
-<figures/relaxcas.pdf, id=114, 386.44376pt x 307.1475pt>
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 8.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 8.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 8.
+
+
+LaTeX Warning: Reference `o:2' on page 11 undefined on input line 13.
+
+<figures/relaxcas.pdf, id=128, 386.44376pt x 307.1475pt>
 File: figures/relaxcas.pdf Graphic file (type pdf)
 <use figures/relaxcas.pdf>
 Package pdftex.def Info: figures/relaxcas.pdf  used on input line 17.
 (pdftex.def)             Requested size: 405.45045pt x 322.25662pt.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 27.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 27.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 27.
-
 
 Package hhline Warning: macro:->\active@prefix -\normal@char-  ignored in \hhli
 ne argument
@@ -747,36 +951,37 @@ Package hhline Warning: macro:->\active@prefix -\normal@char-  ignored in \hhli
 ne argument
 (hhline)                 on input line 45.
 
-) [7
+) [11
 
 
 
- <./figures/relaxcas.pdf>] [8]
+{/usr/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} <./f
+igures/relaxcas.pdf>] [12]
 \openout2 = `zaver.aux'.
 
- (./zaver.tex) [9
+ (./zaver.tex) [13
 
 
 
 ]
 \openout2 = `literatura.aux'.
 
- (./literatura.tex)
-[10
+ (./literatura.tex) [14
 
 
 
 ]
 \openout2 = `prilohy.aux'.
 
- (./prilohy.tex) [11
+
+(./prilohy.tex) [15
 
 
 
 ]
 \openout2 = `prilohaa.aux'.
 
- (./prilohaa.tex) [12
+ (./prilohaa.tex) [16
 
 
 
@@ -789,44 +994,50 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
 
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [13
+) [17
 
 
 
-{/usr/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}] [14]
-Overfull \hbox (31.87729pt too wide) in paragraph at lines 115--117
-[]\T1/lmr/m/n/12 Pre zá-pis elek-tro-nic-kých do-ku-men-tov pla-tia tie isté pr
-a-vidlá, ako pre zá-pis ^^Rklasických^^P.
- []
-
-) [15]
+{/usr/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]) [18]
 \openout2 = `prilohac.aux'.
 
- (./prilohac.tex) [16
+
+(./prilohac.tex
+Overfull \hbox (3.53575pt too wide) in paragraph at lines 22--30
+\T1/lmr/m/n/10 ného sys-tému, napr. v OS GNU/Linux s dis-tri-bú-ciou Ubuntu $\O
+T1/lmr/m/n/10 10\OML/lmm/m/it/10 :\OT1/lmr/m/n/10 04$ \T1/lmr/m/n/10 a ver-ziou
+ [][]\T1/lmtt/m/n/10 texlive 2009-7
+ []
+
+) [19
 
 
 
-] [17
+] [20
 
 
-] (./tukedip.aux (./formulacia.aux)
-(./analyza.aux) (./jadroprace.aux) (./zaver.aux) (./literatura.aux)
-(./prilohy.aux) (./prilohaa.aux) (./prilohab.aux) (./prilohac.aux))
+] (./tukedip.aux (./formulacia.aux) (./analyza.aux) (./jadroprace.aux) (./zaver
+.aux) (./literatura.aux) (./prilohy.aux) (./prilohaa.aux)
+(./prilohab.aux) (./prilohac.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `tukedip.out' has not changed.
-(rerunfilecheck)             Checksum: 2487C38F8A533FF40AAE39D845BF27B6;1322.
+(rerunfilecheck)             Checksum: 704AC914D155C1AD5738446365D16694;2082.
  ) 
 Here is how much of TeX's memory you used:
- 12435 strings out of 468991
- 193661 string characters out of 5454207
- 616837 words of memory out of 5000000
- 40800 multiletter control sequences out of 15000+600000
- 703659 words of font info for 97 fonts, out of 8000000 for 9000
+ 13166 strings out of 468991
+ 206494 string characters out of 5454207
+ 639147 words of memory out of 5000000
+ 41496 multiletter control sequences out of 15000+600000
+ 709638 words of font info for 99 fonts, out of 8000000 for 9000
  324 hyphenation exceptions out of 8191
- 75i,16n,79p,255b,503s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,16n,79p,336b,682s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></u
 sr/local/texlive/2025basic/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/lo
 cal/texlive/2025basic/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/t
@@ -835,15 +1046,16 @@ e/2025basic/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025
 basic/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025basic/
 texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2025basic/texmf-d
 ist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025basic/texmf-dist/fon
-ts/type1/public/lm/lmri12.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/ty
+ts/type1/public/lm/lmri10.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/ty
 pe1/public/lm/lmss10.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/p
 ublic/lm/lmsy10.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public
-/lm/lmsy8.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/lm/lm
-tt12.pfb>
-Output written on tukedip.pdf (17 pages, 291199 bytes).
+/lm/lmsy7.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/lm/lm
+sy8.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/lm/lmtt10.p
+fb>
+Output written on tukedip.pdf (20 pages, 324250 bytes).
 PDF statistics:
- 277 PDF objects out of 1000 (max. 8388607)
- 220 compressed objects within 3 object streams
- 55 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 302 PDF objects out of 1000 (max. 8388607)
+ 240 compressed objects within 3 object streams
+ 60 named destinations out of 1000 (max. 500000)
+ 107 words of extra memory for PDF output out of 10000 (max. 10000000)
 

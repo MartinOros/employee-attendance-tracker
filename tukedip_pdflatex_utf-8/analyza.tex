@@ -1,78 +1,256 @@
 % !TeX root=tukedip.tex
 % !TeX encoding = UTF-8
 % !TeX spellcheck = sk_SK
-\section{Analýza}
+%
+% Required packages (add to preamble if not already present):
+%   \usepackage{booktabs}
+%   \usepackage{tabularx}
+%   \usepackage{plantuml}
+%   \usepackage{lscape}
+%   \usepackage{array}
+%
 
-Text záverečnej práce obsahuje kapitolu, v~rámci ktorej autor uvedie
-analýzu riešených problémov. Táto kapitola môže byť v~prípade potreby
-delená do viacerých podkapitol. Autor v~texte záverečnej práce môže
-zvýrazniť kľúčové slová, pričom sa použije príslušný štýl pre kľúčové
-slová -- napr. toto je kľúčové slovo. V~texte môžu byť použité obrázky
-a~tabuľky podľa nasledujúcich príkladov:
+\section{Analýza požiadaviek (Requirements Analysis)}
+
+Táto kapitola sa venuje analýze požiadaviek na webovú aplikáciu pre bezkontaktné
+zaznamenávanie príchodov a~odchodov zamestnancov pomocou QR kódov. Systém pozostáva
+z~dvoch hlavných rozhraní: rozhrania pre zamestnancov, ktoré umožňuje prihlásenie
+a~skenovanie QR kódu na zaznamenanie príchodu alebo odchodu, a~administrátorského
+rozhrania poskytujúceho správu záznamov, export dát, filtrovanie histórie dochádzky
+a~generovanie QR kódov pre zamestnancov. Analýza je štruktúrovaná prostredníctvom
+používateľských príbehov a~prípadov použitia, ktoré tvoria základ pre návrh
+a~implementáciu systému.
+
+% -----------------------------------------------------------------------
+\subsection{Používateľské príbehy (User Stories)}
+
+Používateľské príbehy opisujú požadované funkcie systému z~pohľadu jednotlivých
+aktérov -- zamestnanca a~administrátora. Každý príbeh obsahuje akceptačné kritérium,
+ktoré definuje podmienky úspešného splnenia danej požiadavky. Prehľad príbehov je
+uvedený v~Tabuľke~\ref{t:user-stories}.
+
+\renewcommand{\arraystretch}{1.12}
+\setlength{\tabcolsep}{3pt}
+\footnotesize
+\begin{longtable}{|p{1.2cm}|p{2.6cm}|p{5.4cm}|p{5.4cm}|}
+\caption{Používateľské príbehy}\label{t:user-stories}\\
+\hline
+\textbf{ID} & \textbf{Rola} & \textbf{Príbeh} & \textbf{Akceptačné kritérium} \\
+\hline
+\endfirsthead
+\hline
+\textbf{ID} & \textbf{Rola} & \textbf{Príbeh} & \textbf{Akceptačné kritérium} \\
+\hline
+\endhead
+US-01 & Zamestnanec &
+Ako zamestnanec chcem sa prihlásiť do systému pomocou mena a~hesla, aby som mal
+prístup k~funkcii skenovania QR kódu. &
+Prihlásenie prebehne úspešne len pri zadaní správnych prihlasovacích údajov;
+nesprávne údaje zobrazia chybovú správu. \\
+\hline
+US-02 & Zamestnanec &
+Ako zamestnanec chcem naskenovať svoj QR kód pomocou kamery zariadenia, aby bol
+môj príchod alebo odchod automaticky zaznamenaný. &
+Systém rozpozná QR kód, určí správny typ záznamu (príchod/odchod) a~uloží ho
+s~časovou pečiatkou. \\
+\hline
+US-03 & Zamestnanec &
+Ako zamestnanec chcem po úspešnom skene vidieť potvrdenie o~zaznamenaní príchodu
+alebo odchodu, aby som bol istý, že dáta boli uložené. &
+Na obrazovke sa zobrazí správa s~typom záznamu a~aktuálnym časom do 2~sekúnd
+od skenovania. \\
+\hline
+US-04 & Zamestnanec &
+Ako zamestnanec chcem sa odhlásiť zo systému, aby bola moja relácia bezpečne
+ukončená. &
+Po odhlásení je relácia zrušená a~používateľ je presmerovaný na prihlasovaciu
+stránku. \\
+\hline
+US-05 & Administrátor &
+Ako administrátor chcem sa prihlásiť do oddeleného administrátorského rozhrania
+pomocou svojich prihlasovacích údajov, aby som mal prístup k~správe systému. &
+Administrátorský účet umožňuje prístup iba do admin dashboardu; bežní zamestnanci
+nemôžu pristupovať k~admin rozhraniu. \\
+\hline
+US-06 & Administrátor &
+Ako administrátor chcem prehliadať históriu dochádzky všetkých zamestnancov
+s~možnosťou filtrovania podľa mena, dátumu a~typu záznamu, aby som prehľadne videl
+dochádzku. &
+Záznamy sú zobrazené v~tabuľke; filtrovanie vracia iba relevantné záznamy
+zodpovedajúce zvoleným kritériám. \\
+\hline
+US-07 & Administrátor &
+Ako administrátor chcem upravovať alebo mazať záznamy dochádzky, aby som mohol
+opraviť prípadné chyby v~dátach. &
+Zmenené záznamy sú okamžite aktualizované v~databáze; zmazané záznamy sú trvalo
+odstránené po potvrdení. \\
+\hline
+US-08 & Administrátor &
+Ako administrátor chcem exportovať záznamy dochádzky do súboru Excel, aby som
+mohol dáta ďalej spracovávať alebo archivovať mimo systému. &
+Exportovaný súbor obsahuje všetky zobrazené záznamy (prípadne filtrované) vo
+formáte XLSX a~je automaticky stiahnutý do zariadenia. \\
+\hline
+US-09 & Administrátor &
+Ako administrátor chcem generovať QR kódy pre jednotlivých zamestnancov, aby každý
+zamestnanec mal unikátny kód na skenovanie. &
+Vygenerovaný QR kód je jednoznačne priradený k~danému zamestnancovi a~je možné
+ho stiahnuť alebo vytlačiť. \\
+\hline
+US-10 & Administrátor &
+Ako administrátor chcem spravovať zoznam zamestnancov (pridávanie, deaktivácia),
+aby systém odrážal aktuálny stav personálu. &
+Nový zamestnanec je po pridaní okamžite dostupný v~systéme; deaktivovaný
+zamestnanec nemôže skenovať QR kód. \\
+\hline
+\end{longtable}
+
+% -----------------------------------------------------------------------
+\subsection{Prípady použitia (Use Cases)}
+
+Prípady použitia podrobnejšie opisujú interakcie aktérov so systémom vrátane
+predpodmienok a~očakávaných výsledkov. Prehľad prípadov použitia je uvedený
+v~Tabuľke~\ref{t:use-cases}.
+
+\begin{landscape}
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{4pt}
+\small
+\begin{longtable}{|p{1.3cm}|p{3.8cm}|p{3.4cm}|p{7.0cm}|p{6.0cm}|p{6.0cm}|}
+\caption{Prípady použitia}\label{t:use-cases}\\
+\hline
+\textbf{ID} & \textbf{Názov} & \textbf{Aktér} & \textbf{Popis} & \textbf{Predpodmienka} & \textbf{Výsledok} \\
+\hline
+\endfirsthead
+\hline
+\textbf{ID} & \textbf{Názov} & \textbf{Aktér} & \textbf{Popis} & \textbf{Predpodmienka} & \textbf{Výsledok} \\
+\hline
+\endhead
+UC-01 & Prihlásenie zamestnanca & Zamestnanec &
+Zamestnanec zadá svoje meno a~heslo na prihlasovacej stránke aplikácie. &
+Zamestnanec má platný účet v~systéme. &
+Zamestnanec je prihlásený a~presmerovaný na stránku skenovania. \\
+\hline
+UC-02 & Skenovanie QR kódu & Zamestnanec &
+Zamestnanec nasmeruje kameru zariadenia na vytlačený QR kód; systém ho
+automaticky rozpozná pomocou knižnice jsQR.js. &
+Zamestnanec je prihlásený; zariadenie má funkčnú kameru. &
+Záznam príchodu alebo odchodu je uložený v~databáze s~časovou pečiatkou. \\
+\hline
+UC-03 & Zobrazenie potvrdenia & Zamestnanec &
+Po úspešnom skene systém zobrazí potvrdzovaciu správu s~typom záznamu a~časom. &
+QR kód bol úspešne rozpoznaný (UC-02). &
+Zamestnanec vidí vizuálne potvrdenie záznamu. \\
+\hline
+UC-04 & Odhlásenie & Zamestnanec / Administrátor &
+Používateľ klikne na tlačidlo odhlásenia; systém zruší reláciu. &
+Používateľ je prihlásený. &
+Relácia je zrušená; používateľ je presmerovaný na prihlasovaciu stránku. \\
+\hline
+UC-05 & Prihlásenie administrátora & Administrátor &
+Administrátor zadá svoje prihlasovacie údaje na osobitnej admin prihlasovacej
+stránke. &
+Administrátor má platný admin účet. &
+Administrátor je prihlásený a~presmerovaný na admin dashboard. \\
+\hline
+UC-06 & Prehliadanie a~filtrovanie dochádzky & Administrátor &
+Administrátor prezerá tabuľku dochádzky a~aplikuje filtre podľa mena zamestnanca,
+dátumového rozsahu alebo typu záznamu. &
+Administrátor je prihlásený (UC-05). &
+Tabuľka zobrazí iba záznamy zodpovedajúce zvoleným filtrom. \\
+\hline
+UC-07 & Úprava záznamu dochádzky & Administrátor &
+Administrátor vyberie konkrétny záznam a~upraví jeho hodnoty (typ, čas) cez
+editačný formulár. &
+Administrátor je prihlásený; záznam existuje v~databáze. &
+Zmenené údaje sú uložené v~databáze a~zobrazené v~tabuľke. \\
+\hline
+UC-08 & Vymazanie záznamu dochádzky & Administrátor &
+Administrátor vyberie záznam na vymazanie a~potvrdí akciu. &
+Administrátor je prihlásený; záznam existuje v~databáze. &
+Záznam je trvalo odstránený z~databázy. \\
+\hline
+UC-09 & Export do Excelu & Administrátor &
+Administrátor klikne na tlačidlo exportu; systém vygeneruje XLSX súbor
+s~aktuálne zobrazenými záznamami. &
+Administrátor je prihlásený; existujú záznamy na export. &
+Súbor XLSX je stiahnutý do zariadenia administrátora. \\
+\hline
+UC-10 & Generovanie QR kódu & Administrátor &
+Administrátor vyberie zamestnanca a~nechá systém vygenerovať jeho unikátny QR
+kód pomocou knižnice chillerlan/php-qrcode. &
+Administrátor je prihlásený; zamestnanec je evidovaný v~systéme. &
+QR kód je vygenerovaný, uložený a~dostupný na stiahnutie alebo tlač. \\
+\hline
+\end{longtable}
+\end{landscape}
+
+% -----------------------------------------------------------------------
+\subsection{Use Case Diagram}
+
+Diagram prípadov použitia (Obrázok~\ref{o:use-case-diagram}) znázorňuje vzťahy medzi
+aktérmi systému a~jednotlivými funkciami aplikácie. Systém definuje dvoch aktérov:
+\textit{Zamestnanca}, ktorý využíva funkcie prihlasovania a~skenovania QR kódu, a~\textit{Administrátora}, ktorý spravuje záznamy dochádzky, generuje QR kódy a~exportuje
+dáta. Prípad použitia \textit{Skenovanie QR kódu} obsahuje \texttt{<<include>>} vzťah
+na \textit{Zobrazenie potvrdenia}, keďže potvrdenie je neoddeliteľnou súčasťou
+procesu skenovania. Prípad použitia \textit{Prehliadanie dochádzky} je rozšírený
+prostredníctvom \texttt{<<extend>>} o~\textit{Filtrovanie záznamov}, ktoré je
+voliteľnou, ale bežne využívanou funkciou. Podobne \textit{Export do Excelu} rozširuje
+\textit{Prehliadanie dochádzky} ako voliteľná akcia nadväzujúca na zobrazenie záznamov.
 
 \begin{figure}[!ht]
-\centering \unitlength=1mm
-\begin{picture}(30,30)(0,0)
-\put(0,0){\line(1,0){30}}
-\put(0,0){\line(0,1){30}}
-\put(30,0){\line(0,1){30}}
-\put(0,30){\line(1,0){30}}
-\end{picture}
-\caption{Toto je štvorec}\label{o:1}
-\end{figure}
-
-
-Obrázok by mal byť podľa možnosti centrovaný. Pri jeho opisovaní
-v~texte treba použiť odkazy na obrázok v~tvare Obrázok~\ref{o:1}.
-
-%\tabcolsep=8pt
-\begin{table}[!ht]\caption{Prehľad jednotiek}\label{t:1}
-\smallskip
 \centering
-\begin{tabular}{|l|c|} \hline
-Názov	& (Jednotka v~sústave SI) \\ \hline
-Napätie & $\upmu$V \\ \hline
-\end{tabular}
-\end{table}
-\nomenclature{$\upmu$}{mikro, $10^{-6}$}
-\nomenclature{SI}{Syst\`eme International}
-\nomenclature{V}{volt, základná jednotka napätia v sústave SI}
+\begin{plantuml}
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+skinparam actorStyle awesome
+skinparam usecase {
+  BackgroundColor #EEF4FB
+  BorderColor #2C6DAD
+  ArrowColor #2C6DAD
+  ActorBorderColor #1A3F6F
+  ActorBackgroundColor #D6E8FA
+}
 
-Tabuľka by mala byť podľa možnosti centrovaná. Pri jej opisovaní
-v~texte treba použiť odkazy na tabuľku v~tvare: pozri
-Tabuľku~\ref{t:1}. Na číslovanie obrázkov, resp. tabuliek treba použiť
-triedenie. Za slovom {\it Obrázok} nasleduje ako prvé číslo kapitoly
-alebo časti, v~ktorej sa obrázok nachádza, potom medzera, pomlčka,
-medzera a~poradové číslo ilustrácie v~danej kapitole alebo časti.
-Napr.:~Obrázok~\ref{o:1} (čiže: prvý obrázok v~druhej kapitole alebo
-časti). V~prípade, ak tabuľka presahuje stranu, je možné použiť balík
-\verb+longtable+.
+actor "Zamestnanec" as EMP
+actor "Administrátor" as ADM
 
-Navrhujeme zaraďovať obrázky v~elektronickej podobe. Napríklad
-Obrázok~\ref{o:2}, ktorý opisuje riešenie diferenciálnej rovnice
-tlmených oscilácií
-%% \def\ud{\mathrm{d}}
-\begin{equation}\label{r:1}
-\frac{\ud^2y}{\ud t^2}+\frac{\ud y}{\ud t}+y =0, \qquad y(0)=1, \quad
-y\,'(0)=15,
-\end{equation}
-bol vytvorený v~MATLABe a~príkazom \texttt{print tlmosc.eps -f1
--deps2} bol uložený vo formáte Encapsulated Postscript. Na prípadné
-použitie pdf\LaTeX{}u sa obrázok konvertuje do formátu PDF, napr.
-pomocou programu \texttt{epstopdf}. Zvyčajne sa číslujú vzťahy, na
-ktoré sa v~texte odvolávame. Napríklad: vzťahy (\ref{r:1}) definujú
-Cauchyho začiatočnú úlohu.
+rectangle "QR Attendance Tracker" {
 
+  usecase "Prihlásenie\nzamestnanca" as UC1
+  usecase "Skenovanie\nQR kódu" as UC2
+  usecase "Zobrazenie\npotvrdenia" as UC3
+  usecase "Odhlásenie" as UC4
 
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=0.7\textwidth]{tlmosc}
-\caption{Grafické zobrazenie riešenia rovnice \eqref{r:1}}\label{o:2}
+  usecase "Prihlásenie\nadministrátora" as UC5
+  usecase "Prehliadanie\ndochádzky" as UC6
+  usecase "Filtrovanie\nzáznamov" as UC7
+  usecase "Úprava záznamu" as UC8
+  usecase "Vymazanie záznamu" as UC9
+  usecase "Export do Excelu" as UC10
+  usecase "Generovanie\nQR kódu" as UC11
+
+}
+
+EMP --> UC1
+EMP --> UC2
+EMP --> UC4
+
+UC2 .> UC3 : <<include>>
+
+ADM --> UC5
+ADM --> UC6
+ADM --> UC8
+ADM --> UC9
+ADM --> UC10
+ADM --> UC11
+ADM --> UC4
+
+UC7 .> UC6 : <<extend>>
+UC10 .> UC6 : <<extend>>
+
+@enduml
+\end{plantuml}
+\caption{Diagram prípadov použitia systému}\label{o:use-case-diagram}
 \end{figure}
-
-
-
-\subsection{Podkapitola}
-Podkapitoly záverečnej práce majú za úlohu členenie textu záverečnej
-práce s~cieľom, čo najväčšej prehľadnosti. Kapitol môže byť viacero
-a~v~ich názvoch sa používa desatinné číslovanie.

@@ -1,0 +1,50 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+skinparam actorStyle awesome
+skinparam usecase {
+  BackgroundColor #EEF4FB
+  BorderColor #2C6DAD
+  ArrowColor #2C6DAD
+  ActorBorderColor #1A3F6F
+  ActorBackgroundColor #D6E8FA
+}
+
+actor "Zamestnanec" as EMP
+actor "Administrátor" as ADM
+
+rectangle "QR Attendance Tracker" {
+
+  usecase "Prihlásenie\nzamestnanca" as UC1
+  usecase "Skenovanie\nQR kódu" as UC2
+  usecase "Zobrazenie\npotvrdenia" as UC3
+  usecase "Odhlásenie" as UC4
+
+  usecase "Prihlásenie\nadministrátora" as UC5
+  usecase "Prehliadanie\ndochádzky" as UC6
+  usecase "Filtrovanie\nzáznamov" as UC7
+  usecase "Úprava záznamu" as UC8
+  usecase "Vymazanie záznamu" as UC9
+  usecase "Export do Excelu" as UC10
+  usecase "Generovanie\nQR kódu" as UC11
+
+}
+
+EMP --> UC1
+EMP --> UC2
+EMP --> UC4
+
+UC2 .> UC3 : <<include>>
+
+ADM --> UC5
+ADM --> UC6
+ADM --> UC8
+ADM --> UC9
+ADM --> UC10
+ADM --> UC11
+ADM --> UC4
+
+UC7 .> UC6 : <<extend>>
+UC10 .> UC6 : <<extend>>
+
+@enduml
