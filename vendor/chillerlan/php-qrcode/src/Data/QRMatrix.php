@@ -247,7 +247,7 @@ final class QRMatrix{
 	/**
 	 * shortcut to initialize the matrix
 	 */
-	public function init(int $maskPattern, bool $test = null):QRMatrix{
+	public function init(int $maskPattern, ?bool $test = null):QRMatrix{
 		return $this
 			->setFinderPattern()
 			->setSeparators()
@@ -477,7 +477,7 @@ final class QRMatrix{
 	 *
 	 * ISO/IEC 18004:2000 Section 8.10
 	 */
-	public function setVersionNumber(bool $test = null):QRMatrix{
+	public function setVersionNumber(?bool $test = null):QRMatrix{
 		$bits = $this::versionPattern[$this->version] ?? false;
 
 		if($bits !== false){
@@ -501,7 +501,7 @@ final class QRMatrix{
 	 *
 	 * ISO/IEC 18004:2000 Section 8.9
 	 */
-	public function setFormatInfo(int $maskPattern, bool $test = null):QRMatrix{
+	public function setFormatInfo(int $maskPattern, ?bool $test = null):QRMatrix{
 		$bits = $this::formatPattern[QRCode::ECC_MODES[$this->eclevel]][$maskPattern] ?? 0;
 
 		for($i = 0; $i < 15; $i++){
@@ -541,7 +541,7 @@ final class QRMatrix{
 	 *
 	 * @throws \chillerlan\QRCode\Data\QRCodeDataException
 	 */
-	public function setQuietZone(int $size = null):QRMatrix{
+	public function setQuietZone(?int $size = null):QRMatrix{
 
 		if($this->matrix[$this->moduleCount - 1][$this->moduleCount - 1] === $this::M_NULL){
 			throw new QRCodeDataException('use only after writing data');
@@ -588,7 +588,7 @@ final class QRMatrix{
 	 *
 	 * @throws \chillerlan\QRCode\Data\QRCodeDataException
 	 */
-	public function setLogoSpace(int $width, int $height, int $startX = null, int $startY = null):QRMatrix{
+	public function setLogoSpace(int $width, int $height, ?int $startX = null, ?int $startY = null):QRMatrix{
 
 		// for logos we operate in ECC H (30%) only
 		if($this->eclevel !== QRCode::ECC_H){

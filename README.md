@@ -1,51 +1,104 @@
 # Employee Attendance Tracker
 
-QR Code-based Employee Attendance Tracker
+QR Code-based Employee Attendance Tracker — open-source web app built with PHP and MySQL.
 
 ## Description
 
-Employee Attendance Tracker is an open-source web application developed using PHP and JavaScript. The project aims to provide a simple yet efficient solution for managing employee attendance in a workplace setting. Employees can check in and out of work by scanning their unique QR codes, while supervisors have access to a dashboard to monitor and manage attendance records.
-
-For more detailed documentation, please visit the [Employee Attendance Tracker Documentation](https://oguslu.com/oss-employee-attendance-tracker-0).
+Employees check in and out by scanning their unique QR codes. Supervisors have a dedicated admin dashboard to monitor and manage attendance records in real-time.
 
 ## Key Features
 
-- QR Code Check-In/Check-Out: Employees can easily check in and out of work by scanning their personalized QR codes using their smartphones or devices.
+- **QR Code Check-In/Check-Out** — employees scan their personalized QR codes via any device camera
+- **Supervisor Dashboard** — admin area to view and manage all attendance records
+- **Attendance Editing** — supervisors can manually adjust check-in/check-out times
+- **Excel Export** — download attendance data as `.xlsx` for payroll and HR reporting
+- **QR Code Generator** — generate employee QR codes directly from the admin area
 
-- Supervisor Dashboard: The application offers a dedicated admin area for supervisors to monitor and manage attendance records in real-time.
+## Requirements
 
-- Attendance Records Management: Supervisors have the capability to view and edit employee check-in and check-out processes as needed, ensuring accurate and up-to-date attendance data.
+- PHP 8.0+
+- MySQL 5.7+ / MariaDB
+- Web server (Apache, Nginx, or PHP built-in server)
+- Composer (for dependencies)
 
-- Excel Export: To streamline payroll and HR processes, supervisors can download attendance data as an Excel file, facilitating the generation of payslips and other reports.
+## Installation
 
-## Installation and Usage
+**1. Clone the repository**
 
-Please refer to the [Employee Attendance Tracker Documentation](https://oguslu.com/oss-employee-attendance-tracker-0) for detailed installation instructions and usage guidelines.
+```bash
+git clone https://github.com/mansuroguslu/employee-attendance-tracker.git
+cd employee-attendance-tracker
+```
 
-## How to Use the Employee Attendance Tracker
+**2. Install PHP dependencies**
 
-To see how the Employee Attendance Tracker works, check out our [video tutorial](https://www.youtube.com/watch?v=jQKrtat3JKs).
+```bash
+composer install
+```
 
-## License
+**3. Start MySQL**
 
-This project is licensed under GNU License - see the [LICENSE](LICENSE) file for details.
+```bash
+mysql.server start
+```
+
+**4. Start the PHP development server**
+
+```bash
+php -S localhost:8080
+```
+
+**5. Run the installer**
+
+Open [http://localhost:8080/install/install.php](http://localhost:8080/install/install.php) and fill in:
+
+| Field | Default value |
+|-------|--------------|
+| Database Host | `localhost` |
+| Database Username | `root` |
+| Database Password | *(leave empty for local)* |
+| Database Name | `mewdev_eat` |
+| Admin Username | `admin` |
+| Admin Password | *(your choice)* |
+| Employee Username | `employee` |
+| Employee Password | *(your choice)* |
+
+This creates the database, tables, users, and `db_connection.php` automatically.
+
+## Usage
+
+| Area | URL | Credentials |
+|------|-----|-------------|
+| Employee App | [http://localhost:8080](http://localhost:8080) | employee login |
+| Admin Login | [http://localhost:8080/admin/login.php](http://localhost:8080/admin/login.php) | admin login |
+| Admin Dashboard | [http://localhost:8080/admin](http://localhost:8080/admin) | *(after admin login)* |
+
+> **Note:** The employee app and admin area use separate login systems. Use `/admin/login.php` to access the admin dashboard.
+
+## Video Tutorial
+
+[Watch on YouTube](https://www.youtube.com/watch?v=jQKrtat3JKs)
+
+## Documentation
+
+[Full Documentation](https://oguslu.com/oss-employee-attendance-tracker-0)
+
+## Changelog
+
+- **v0.1.1** (2023-08-02) — QR Code Generator added to Admin Area
 
 ## Contributing
 
-Contributions are welcome! If you would like to contribute to the project, please follow the guidelines specified in [CONTRIBUTING.md](CONTRIBUTING.md).
+Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## Issues
 
-If you encounter any issues while using the Employee Attendance Tracker, please report them in the [Issue Tracker](https://github.com/mansuroguslu/employee_attendance_tracker/issues).
+Report bugs in the [Issue Tracker](https://github.com/mansuroguslu/employee_attendance_tracker/issues).
 
-## About the Developer
+## License
 
-This project is developed and maintained by [Mansur Oguslu](https://github.com/mansuroguslu).
+GNU General Public License — see [LICENSE](LICENSE) for details.
 
----
+## Developer
 
-## UPDATE:
-
-02/08/2023: V0.1.1 - New function QR CODE Generator in Admin Area
-
-![GIF](https://oguslu.com/bl-content/uploads/pages/autosave-f774ae5798bad6511cc2ac4f025cef7b/ezgif-2-b880a03f67.webp)
+Developed and maintained by [Mansur Oguslu](https://github.com/mansuroguslu).

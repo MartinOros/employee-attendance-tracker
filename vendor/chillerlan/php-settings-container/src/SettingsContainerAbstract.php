@@ -20,7 +20,7 @@ abstract class SettingsContainerAbstract implements SettingsContainerInterface{
 	/**
 	 * SettingsContainerAbstract constructor.
 	 */
-	public function __construct(iterable $properties = null){
+	public function __construct(?iterable $properties = null){
 
 		if(!empty($properties)){
 			$this->fromIterable($properties);
@@ -138,7 +138,7 @@ abstract class SettingsContainerAbstract implements SettingsContainerInterface{
 	/**
 	 * @inheritdoc
 	 */
-	public function toJSON(int $jsonOptions = null):string{
+	public function toJSON(?int $jsonOptions = null):string{
 		return json_encode($this, $jsonOptions ?? 0);
 	}
 
