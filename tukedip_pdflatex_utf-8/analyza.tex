@@ -171,6 +171,11 @@ Administrátor vyberie zamestnanca a~nechá systém vygenerovať jeho unikátny 
 kód pomocou knižnice chillerlan/php-qrcode. &
 Aktér: Administrátor. Pred: prihlásený, zamestnanec evidovaný. Výs: QR kód vygenerovaný a dostupný. \\
 \hline
+UC-11 & Správa zamestnancov &
+Administrátor spravuje zoznam zamestnancov (pridanie, úprava, deaktivácia), aby systém
+odrážal aktuálny stav personálu. &
+Aktér: Administrátor. Pred: prihlásený. Výs: zmeny uložené; deaktivovaný zamestnanec nemôže skenovať. \\
+\hline
 \end{longtable}
 
 % -----------------------------------------------------------------------
@@ -242,3 +247,48 @@ UC10 .> UC6 : <<extend>>
 \end{plantuml}
 \caption{Diagram prípadov použitia systému}\label{o:use-case-diagram}
 \end{figure}
+
+% -----------------------------------------------------------------------
+\subsection{Prioritizácia požiadaviek (MoSCoW)}
+
+V tejto časti sú požiadavky z~pohľadu používateľských príbehov a~prípadov použitia
+zoraďované pomocou metódy MoSCoW do kategórií:
+\textbf{M} (Must have), \textbf{S} (Should have), \textbf{C} (Could have),
+\textbf{W} (Won't have).
+
+\renewcommand{\arraystretch}{1.12}
+\setlength{\tabcolsep}{3pt}
+\footnotesize
+\begin{longtable}{|p{1.3cm}|p{1.3cm}|p{9.0cm}|p{1.0cm}|}
+\caption{MoSCoW prioritizácia požiadaviek}\label{t:moscow}\\
+\hline
+\textbf{US} & \textbf{UC} & \textbf{Požiadavka (stručne)} & \textbf{Prio} \\
+\hline
+\endfirsthead
+\hline
+\textbf{US} & \textbf{UC} & \textbf{Požiadavka (stručne)} & \textbf{Prio} \\
+\hline
+\endhead
+US-01 & UC-01 & Prihlásenie zamestnanca (meno/heslo) pre prístup ku skenovaniu. & M \\
+\hline
+US-02 & UC-02 & Skenovanie QR kódu a automatické uloženie príchodu/odchodu s časom. & M \\
+\hline
+US-03 & UC-03 & Zobrazenie potvrdenia po úspešnom skene. & S \\
+\hline
+US-04 & UC-04 & Odhlásenie používateľa a ukončenie relácie. & M \\
+\hline
+US-05 & UC-05 & Prihlásenie administrátora do admin rozhrania. & M \\
+\hline
+US-06 & UC-06 & Prehliadanie histórie dochádzky a filtrovanie záznamov. & M \\
+\hline
+US-07 & UC-07 & Úprava záznamu dochádzky (typ/čas). & S \\
+\hline
+US-07 & UC-08 & Vymazanie záznamu dochádzky (s potvrdením). & S \\
+\hline
+US-08 & UC-09 & Export záznamov do XLSX. & C \\
+\hline
+US-09 & UC-10 & Generovanie QR kódov pre zamestnancov. & M \\
+\hline
+US-10 & UC-11 & Správa zamestnancov (pridanie/deaktivácia). & S \\
+\hline
+\end{longtable}

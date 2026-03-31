@@ -1,0 +1,37 @@
+%% plantuml.sty — PlantUML integration for LaTeX (shell-escape required)
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{plantuml}[2026/03/31 PlantUML integration (local override)]
+
+\RequirePackage{graphicx}
+\RequirePackage{fancyvrb}
+
+\newcounter{plantumlcount}
+\setcounter{plantumlcount}{0}
+
+% Prefer common macOS Graphviz locations. If none exist, PlantUML will render an error image.
+% We instead show a LaTeX box with install instructions.
+\newcommand{\plantuml@dotpath}{}
+\IfFileExists{/opt/homebrew/bin/dot}{\renewcommand{\plantuml@dotpath}{/opt/homebrew/bin/dot}}{}
+\IfFileExists{/usr/local/bin/dot}{\renewcommand{\plantuml@dotpath}{/usr/local/bin/dot}}{}
+\IfFileExists{/opt/local/bin/dot}{\renewcommand{\plantuml@dotpath}{/opt/local/bin/dot}}{}
+
+\newenvironment{plantuml}{%
+  \stepcounter{plantumlcount}%
+  \edef\plantuml@base{plantuml-fig-\arabic{plantumlcount}}%
+  \VerbatimOut{\plantuml@base.puml}%
+}{%
+  \endVerbatimOut%
+  \ifx\plantuml@dotpath\@empty
+    \fbox{\parbox{0.9\linewidth}{\textbf{Diagram sa nepodarilo vykresliť.}\\
+    Chýba Graphviz (\texttt{dot}). Nainštaluj Graphviz a~znovu prekompiluj.\\
+    macOS (Homebrew): \texttt{brew install graphviz}}}%
+  \else
+    \immediate\write18{java -jar /Users/martinoros/bin/plantuml.jar -graphvizdot "\plantuml@dotpath" -png \plantuml@base.puml 2>/dev/null}%
+    \IfFileExists{\plantuml@base.png}{%
+      \includegraphics[width=0.85\linewidth,height=0.75\textheight,keepaspectratio]{\plantuml@base.png}%
+    }{%
+      \fbox{\texttt{[Run pdflatex with --shell-escape to render PlantUML diagram]}}%
+    }%
+  \fi
+}
+

@@ -4,10 +4,11 @@
 \contentsline {subsection}{\numberline {2.1}Používateľské príbehy (User Stories)}{5}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Prípady použitia (Use Cases)}{7}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Use Case Diagram}{9}{subsection.2.3}%
-\contentsline {section}{\numberline {3}Jadro práce}{10}{section.3}%
-\contentsline {section}{\numberline {4}Z\'aver (zhodnotenie rie\v {s}enia)}{12}{section.4}%
-\contentsline {section}{\hbox to\@tempdima {\hfil }Zoznam použitej literatúry}{13}{section*.3}%
-\contentsline {section}{\hbox to\@tempdima {\hfil }Zoznam pr\'iloh}{14}{section*.4}%
-\contentsline {section}{\hbox to\@tempdima {\hfil }Príloha A}{15}{section*.5}%
-\contentsline {section}{\hbox to\@tempdima {\hfil }Príloha B}{16}{section*.7}%
-\contentsline {section}{\hbox to\@tempdima {\hfil }Príloha C}{18}{section*.9}%
+\contentsline {subsection}{\numberline {2.4}Prioritizácia požiadaviek (MoSCoW)}{9}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Jadro práce}{12}{section.3}%
+\contentsline {section}{\numberline {4}Z\'aver (zhodnotenie rie\v {s}enia)}{14}{section.4}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }Zoznam použitej literatúry}{15}{section*.3}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }Zoznam pr\'iloh}{16}{section*.4}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }Príloha A}{17}{section*.5}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }Príloha B}{18}{section*.7}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }Príloha C}{20}{section*.9}%

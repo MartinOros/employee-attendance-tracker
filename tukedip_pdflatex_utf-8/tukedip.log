@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.7)  31 MAR 2026 21:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.7)  31 MAR 2026 22:06
 entering extended mode
- \write18 enabled.
+ restricted \write18 enabled.
  %&-line parsing enabled.
 **tukedip.tex
 (./tukedip.tex
@@ -305,8 +305,8 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-(/Users/martinoros/Library/texmf/tex/latex/plantuml/plantuml.sty
-Package: plantuml 2024/01/01 PlantUML integration
+(./plantuml.sty
+Package: plantuml 2026/03/31 PlantUML integration (local override)
 
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2025/07/28 4.6 verbatim text (tvz,hv)
@@ -852,28 +852,55 @@ Underfull \hbox (badness 2495) in paragraph at lines 172--173
  []
 
 
-Overfull \hbox (17.46404pt too wide) in alignment at lines 127--174
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+[]|\T1/lmr/m/n/10 Správa za-mest-nan-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
+[]|\T1/lmr/m/n/10 Aktér: Ad-mi-nis-trá-tor.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
+\T1/lmr/m/n/10 Pred: pri-hlá-sený. Výs:
+ []
+
+
+Underfull \hbox (badness 2512) in paragraph at lines 177--178
+\T1/lmr/m/n/10 zmeny ulo-ºené; de-ak-ti-vo-
+ []
+
+
+Overfull \hbox (17.46404pt too wide) in alignment at lines 127--179
  [] [] [] [] 
  []
 
 ignored error: Infinite glue shrinkage found in box being split [7]
+ignored error: Infinite glue shrinkage found in box being split [8]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-82.
+87.
 
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [8]
+)
 \openout3 = `plantuml-fig-1.puml'.
 
-runsystem(java -jar /Users/martinoros/bin/plantuml.jar -png plantuml-fig-1.puml
- 2>/dev/null)...executed.
+runsystem(java -jar /Users/martinoros/bin/plantuml.jar -graphvizdot "/opt/homeb
+rew/bin/dot" -png plantuml-fig-1.puml 2>/dev/null)...disabled (restricted).
 
-<plantuml-fig-1.png, id=116, 280.04625pt x 207.77625pt>
+<plantuml-fig-1.png, id=123, 421.575pt x 959.585pt>
 File: plantuml-fig-1.png Graphic file (type png)
 <use plantuml-fig-1.png>
-Package pdftex.def Info: plantuml-fig-1.png  used on input line 242.
-(pdftex.def)             Requested size: 426.79134pt x 316.66649pt.
-) [9 <./plantuml-fig-1.png (PNG copy)>]
+Package pdftex.def Info: plantuml-fig-1.png  used on input line 247.
+(pdftex.def)             Requested size: 206.2519pt x 469.46866pt.
+
+Underfull \hbox (badness 8019) in paragraph at lines 274--274
+[]|\T1/lmr/m/n/10 Skenovanie QR kódu a au-to-ma-tické ulo-ºe-nie prí-
+ []
+
+ignored error: Infinite glue shrinkage found in box being split [9]) [10]
+[11 <./plantuml-fig-1.png (PNG copy)>]
 \openout2 = `jadroprace.aux'.
 
  (./jadroprace.tex
@@ -885,9 +912,9 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 8.
 
 
-LaTeX Warning: Reference `o:2' on page 10 undefined on input line 13.
+LaTeX Warning: Reference `o:2' on page 12 undefined on input line 13.
 
-<figures/relaxcas.pdf, id=124, 386.44376pt x 307.1475pt>
+<figures/relaxcas.pdf, id=139, 386.44376pt x 307.1475pt>
 File: figures/relaxcas.pdf Graphic file (type pdf)
 <use figures/relaxcas.pdf>
 Package pdftex.def Info: figures/relaxcas.pdf  used on input line 17.
@@ -1042,22 +1069,22 @@ Package hhline Warning: macro:->\active@prefix -\normal@char-  ignored in \hhli
 ne argument
 (hhline)                 on input line 45.
 
-) [10
+) [12
 
 
 
 {/usr/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} <./f
-igures/relaxcas.pdf>] [11]
+igures/relaxcas.pdf>] [13]
 \openout2 = `zaver.aux'.
 
- (./zaver.tex) [12
+ (./zaver.tex) [14
 
 
 
 ]
 \openout2 = `literatura.aux'.
 
- (./literatura.tex) [13
+ (./literatura.tex) [15
 
 
 
@@ -1065,14 +1092,14 @@ igures/relaxcas.pdf>] [11]
 \openout2 = `prilohy.aux'.
 
 
-(./prilohy.tex) [14
+(./prilohy.tex) [16
 
 
 
 ]
 \openout2 = `prilohaa.aux'.
 
- (./prilohaa.tex) [15
+ (./prilohaa.tex) [17
 
 
 
@@ -1085,11 +1112,11 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
 
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [16
+) [18
 
 
 
-{/usr/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]) [17]
+{/usr/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]) [19]
 \openout2 = `prilohac.aux'.
 
 
@@ -1100,11 +1127,11 @@ T1/lmr/m/n/10 10\OML/lmm/m/it/10 :\OT1/lmr/m/n/10 04$ \T1/lmr/m/n/10 a ver-ziou
  [][]\T1/lmtt/m/n/10 texlive 2009-7
  []
 
-) [18
+) [20
 
 
 
-] [19
+] [21
 
 
 ] (./tukedip.aux (./formulacia.aux) (./analyza.aux) (./jadroprace.aux) (./zaver
@@ -1119,13 +1146,13 @@ L3 programming layer <2026-01-19>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `tukedip.out' has not changed.
-(rerunfilecheck)             Checksum: 704AC914D155C1AD5738446365D16694;2082.
+(rerunfilecheck)             Checksum: 324033E9B7346C205FAAD8A3CE5B21BB;2350.
  ) 
 Here is how much of TeX's memory you used:
- 13162 strings out of 468991
- 206408 string characters out of 5454207
- 638111 words of memory out of 5000000
- 41493 multiletter control sequences out of 15000+600000
+ 13176 strings out of 468991
+ 206526 string characters out of 5454207
+ 640496 words of memory out of 5000000
+ 41504 multiletter control sequences out of 15000+600000
  706643 words of font info for 98 fonts, out of 8000000 for 9000
  324 hyphenation exceptions out of 8191
  75i,16n,79p,336b,605s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1143,10 +1170,10 @@ ublic/lm/lmsy10.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public
 /lm/lmsy7.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/lm/lm
 sy8.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/lm/lmtt10.p
 fb>
-Output written on tukedip.pdf (19 pages, 322596 bytes).
+Output written on tukedip.pdf (21 pages, 387694 bytes).
 PDF statistics:
- 298 PDF objects out of 1000 (max. 8388607)
- 237 compressed objects within 3 object streams
- 59 named destinations out of 1000 (max. 500000)
- 107 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 314 PDF objects out of 1000 (max. 8388607)
+ 251 compressed objects within 3 object streams
+ 63 named destinations out of 1000 (max. 500000)
+ 115 words of extra memory for PDF output out of 10000 (max. 10000000)
 

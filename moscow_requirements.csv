@@ -1,0 +1,12 @@
+User story,Use case,Požiadavka,Priorita (MoSCoW)
+US-01,UC-01,Prihlásenie zamestnanca (meno/heslo) pre prístup ku skenovaniu.,M
+US-02,UC-02,Skenovanie QR kódu a automatické uloženie príchodu/odchodu s časom.,M
+US-03,UC-03,Zobrazenie potvrdenia po úspešnom skene.,S
+US-04,UC-04,Odhlásenie používateľa a ukončenie relácie.,M
+US-05,UC-05,Prihlásenie administrátora do admin rozhrania.,M
+US-06,UC-06,Prehliadanie histórie dochádzky a filtrovanie záznamov.,M
+US-07,UC-07,Úprava záznamu dochádzky (typ/čas).,S
+US-07,UC-08,Vymazanie záznamu dochádzky (s potvrdením).,S
+US-08,UC-09,Export záznamov do XLSX.,C
+US-09,UC-10,Generovanie QR kódov pre zamestnancov.,M
+US-10,UC-11,Správa zamestnancov (pridanie/deaktivácia).,S
