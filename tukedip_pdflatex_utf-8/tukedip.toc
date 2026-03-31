@@ -1,0 +1,11 @@
+\babel@toc {slovak}{}\relax 
+\contentsline {section}{\numberline {1}Formulácia úlohy}{4}{section.1}%
+\contentsline {section}{\numberline {2}Analýza}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Podkapitola}{6}{subsection.2.1}%
+\contentsline {section}{\numberline {3}Jadro práce}{7}{section.3}%
+\contentsline {section}{\numberline {4}Z\'aver (zhodnotenie rie\v {s}enia)}{9}{section.4}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }Zoznam použitej literatúry}{10}{section*.3}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }Zoznam pr\'iloh}{11}{section*.4}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }Príloha A}{12}{section*.5}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }Príloha B}{13}{section*.7}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }Príloha C}{16}{section*.9}%
