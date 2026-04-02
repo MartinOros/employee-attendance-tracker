@@ -4,9 +4,9 @@
 \contentsline {subsection}{\numberline {2.1}Používateľské príbehy (User Stories)}{6}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Prípady použitia (Use Cases)}{8}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Prioritizácia požiadaviek (MoSCoW)}{10}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Use Case Diagram}{10}{subsection.2.4}%
-\contentsline {section}{\numberline {3}Konceptuálny model (Class Diagram)}{12}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Popis tried}{12}{subsection.3.1}%
+\contentsline {subsection}{\numberline {2.4}Use Case Diagram}{11}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Konceptuálny model (Class Diagram)}{11}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Popis tried}{11}{subsection.3.1}%
 \contentsline {section}{\numberline {4}Stavový diagram (State Diagram)}{13}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Stavový diagram relácie (\texttt {Session})}{14}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Stavový diagram záznamu dochádzky (\texttt {AttendanceRecord})}{15}{subsection.4.2}%

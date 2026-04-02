@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.7)  2 APR 2026 12:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.7)  2 APR 2026 12:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -627,62 +627,62 @@ No file tukedip.gls.
 \openout2 = `analyza.aux'.
 
  (./analyza.tex
-Overfull \hbox (14.61858pt too wide) in alignment at lines 35--40
+Overfull \hbox (14.61858pt too wide) in alignment at lines 38--43
  [] [] [] [] 
  []
 
 
-Overfull \hbox (14.61858pt too wide) in alignment at lines 40--44
+Overfull \hbox (14.61858pt too wide) in alignment at lines 43--47
  [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 1009) in paragraph at lines 52--53
+Underfull \hbox (badness 1009) in paragraph at lines 55--56
 \T1/lmr/m/n/10 za-ria-de-nia, aby bol môj prí-chod
  []
 
 
-Underfull \hbox (badness 2393) in paragraph at lines 54--56
+Underfull \hbox (badness 2393) in paragraph at lines 57--59
 []|\T1/lmr/m/n/10 Systém roz-pozná QR kód, ur£í
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--56
+Underfull \hbox (badness 10000) in paragraph at lines 57--59
 \T1/lmr/m/n/10 správny typ zá-znamu (prí-
  []
 
 
-Underfull \hbox (badness 7814) in paragraph at lines 58--59
+Underfull \hbox (badness 7814) in paragraph at lines 61--62
 \T1/lmr/m/n/10 zna-me-naní prí-chodu alebo od-
  []
 
 
-Underfull \hbox (badness 3302) in paragraph at lines 72--74
+Underfull \hbox (badness 3302) in paragraph at lines 75--77
 []|\T1/lmr/m/n/10 Administrátorský ú£et umoº-¬uje
  []
 
 
-Underfull \hbox (badness 3449) in paragraph at lines 83--84
+Underfull \hbox (badness 3449) in paragraph at lines 86--87
 []|\T1/lmr/m/n/10 Ako ad-mi-nis-trá-tor chcem upra-
  []
 
 
-Underfull \hbox (badness 1275) in paragraph at lines 83--84
+Underfull \hbox (badness 1275) in paragraph at lines 86--87
 \T1/lmr/m/n/10 vo-va´ alebo ma-za´ zá-znamy do-
  []
 
 
-Underfull \hbox (badness 1048) in paragraph at lines 97--99
+Underfull \hbox (badness 1048) in paragraph at lines 100--102
 []|\T1/lmr/m/n/10 Vygenerovaný QR kód je jed-no-
  []
 
 
-Underfull \hbox (badness 5592) in paragraph at lines 103--105
+Underfull \hbox (badness 5592) in paragraph at lines 106--108
 \T1/lmr/m/n/10 ak-ti-vo-vaný za-mest-na-nec ne-môºe
  []
 
 
-Overfull \hbox (14.61858pt too wide) in alignment at lines 44--106
+Overfull \hbox (14.61858pt too wide) in alignment at lines 47--109
  [] [] [] [] 
  []
 
@@ -692,269 +692,270 @@ ignored error: Infinite glue shrinkage found in box being split [6
 
 ]
 ignored error: Infinite glue shrinkage found in box being split [7]
-Overfull \hbox (17.46404pt too wide) in alignment at lines 118--123
+Overfull \hbox (17.46404pt too wide) in alignment at lines 121--126
  [] [] [] [] 
  []
 
 
-Overfull \hbox (17.46404pt too wide) in alignment at lines 123--127
+Overfull \hbox (17.46404pt too wide) in alignment at lines 126--130
  [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 5460) in paragraph at lines 128--128
+Underfull \hbox (badness 5460) in paragraph at lines 131--131
 []|\T1/lmr/m/n/10 Prihlásenie za-mest-
  []
 
 
-Underfull \hbox (badness 1642) in paragraph at lines 130--131
+Underfull \hbox (badness 1642) in paragraph at lines 133--134
 \T1/lmr/m/n/10 platný ú£et. Výs: pri-hlá-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--131
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
 \T1/lmr/m/n/10 sený, pre-sme-ro-vaný na
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
 []|\T1/lmr/m/n/10 Aktér: Za-mest-na-nec.
  []
 
 
-Underfull \hbox (badness 1762) in paragraph at lines 135--136
+Underfull \hbox (badness 1762) in paragraph at lines 138--139
 \T1/lmr/m/n/10 Pred: pri-hlá-sený, funk£ná
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
 \T1/lmr/m/n/10 chod/odchod s £a-so-vou
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
 \T1/lmr/m/n/10 úspe²ný sken (UC-02).
  []
 
 
-Underfull \hbox (badness 3930) in paragraph at lines 139--140
+Underfull \hbox (badness 3930) in paragraph at lines 142--143
 \T1/lmr/m/n/10 Výs: vi-zu-álne po-tvr-de-nie
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 []|\T1/lmr/m/n/10 Aktér: Za-mest-na-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 \T1/lmr/m/n/10 nec/Administrátor. Pred:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 \T1/lmr/m/n/10 pri-hlá-sený. Výs: re-lá-cia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--149
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
 []|\T1/lmr/m/n/10 Aktér: Ad-mi-nis-trá-tor.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--152
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
 []|\T1/lmr/m/n/10 Administrátor pre-zerá ta-bu©ku do-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
 []|\T1/lmr/m/n/10 Aktér: Ad-mi-nis-trá-tor.
  []
 
 
-Underfull \hbox (badness 6316) in paragraph at lines 153--154
+Underfull \hbox (badness 6316) in paragraph at lines 156--157
 \T1/lmr/m/n/10 Výs: zo-bra-zené zá-znamy
  []
 
 
-Underfull \hbox (badness 3417) in paragraph at lines 156--157
+Underfull \hbox (badness 3417) in paragraph at lines 159--160
 []|\T1/lmr/m/n/10 Administrátor vy-be-rie kon-krétny zá-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
 []|\T1/lmr/m/n/10 Aktér: Ad-mi-nis-trá-tor.
  []
 
 
-Underfull \hbox (badness 2744) in paragraph at lines 158--159
+Underfull \hbox (badness 2744) in paragraph at lines 161--162
 \T1/lmr/m/n/10 Pred: pri-hlá-sený, zá-znam
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
 []|\T1/lmr/m/n/10 Aktér: Ad-mi-nis-trá-tor.
  []
 
 
-Underfull \hbox (badness 2744) in paragraph at lines 162--163
+Underfull \hbox (badness 2744) in paragraph at lines 165--166
 \T1/lmr/m/n/10 Pred: pri-hlá-sený, zá-znam
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
 \T1/lmr/m/n/10 exis-tuje. Výs: zá-znam
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
 []|\T1/lmr/m/n/10 Aktér: Ad-mi-nis-trá-tor.
  []
 
 
-Underfull \hbox (badness 1565) in paragraph at lines 167--168
+Underfull \hbox (badness 1565) in paragraph at lines 170--171
 \T1/lmr/m/n/10 Pred: pri-hlá-sený, exis-tujú
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
 \T1/lmr/m/n/10 zá-znamy. Výs: XLSX
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--169
+Underfull \hbox (badness 10000) in paragraph at lines 172--172
 []|\T1/lmr/m/n/10 Generovanie QR
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--171
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
 []|\T1/lmr/m/n/10 Administrátor vy-be-rie za-mest-nanca
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--171
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
 \T1/lmr/m/n/10 a ne-chá sys-tém vy-ge-ne-ro-va´ jeho
  []
 
 
-Underfull \hbox (badness 2229) in paragraph at lines 170--171
+Underfull \hbox (badness 2229) in paragraph at lines 173--174
 \T1/lmr/m/n/10 uni-kátny QR kód po-mo-cou kniº-nice
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--173
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
 []|\T1/lmr/m/n/10 Aktér: Ad-mi-nis-trá-tor.
  []
 
 
-Underfull \hbox (badness 2277) in paragraph at lines 172--173
+Underfull \hbox (badness 2277) in paragraph at lines 175--176
 \T1/lmr/m/n/10 Pred: pri-hlá-sený, za-mest-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--173
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
 \T1/lmr/m/n/10 na-nec evi-do-vaný. Výs:
  []
 
 
-Underfull \hbox (badness 2495) in paragraph at lines 172--173
+Underfull \hbox (badness 2495) in paragraph at lines 175--176
 \T1/lmr/m/n/10 QR kód vy-ge-ne-ro-vaný a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 177--177
 []|\T1/lmr/m/n/10 Správa za-mest-nan-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--178
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
 []|\T1/lmr/m/n/10 Aktér: Ad-mi-nis-trá-tor.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--178
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
 \T1/lmr/m/n/10 Pred: pri-hlá-sený. Výs:
  []
 
 
-Underfull \hbox (badness 2512) in paragraph at lines 177--178
+Underfull \hbox (badness 2512) in paragraph at lines 180--181
 \T1/lmr/m/n/10 zmeny ulo-ºené; de-ak-ti-vo-
  []
 
 
-Overfull \hbox (17.46404pt too wide) in alignment at lines 127--179
+Overfull \hbox (17.46404pt too wide) in alignment at lines 130--182
  [] [] [] [] 
  []
 
 ignored error: Infinite glue shrinkage found in box being split [8]
 ignored error: Infinite glue shrinkage found in box being split [9]
-Underfull \hbox (badness 8019) in paragraph at lines 204--204
+Underfull \hbox (badness 8019) in paragraph at lines 207--207
 []|\T1/lmr/m/n/10 Skenovanie QR kódu a au-to-ma-tické ulo-ºe-nie prí-
  []
 
-[10]
+ignored error: Infinite glue shrinkage found in box being split [10]
 \openout3 = `plantuml-fig-1.puml'.
 
 runsystem(/opt/homebrew/opt/openjdk/bin/java -jar /Users/martinoros/bin/plantum
 l.jar -graphvizdot /opt/homebrew/bin/dot -png plantuml-fig-1.puml)...disabled (
 restricted).
 
-<plantuml-fig-1.png, id=200, 421.575pt x 959.585pt>
+<plantuml-fig-1.png, id=198, 421.575pt x 959.585pt>
 File: plantuml-fig-1.png Graphic file (type png)
 <use plantuml-fig-1.png>
-Package pdftex.def Info: plantuml-fig-1.png  used on input line 292.
+Package pdftex.def Info: plantuml-fig-1.png  used on input line 295.
 (pdftex.def)             Requested size: 206.2519pt x 469.46866pt.
- [11 <./plantuml-fig-1.png (PNG copy)>]
 \openout3 = `plantuml-fig-2.puml'.
 
 runsystem(/opt/homebrew/opt/openjdk/bin/java -jar /Users/martinoros/bin/plantum
 l.jar -graphvizdot /opt/homebrew/bin/dot -png plantuml-fig-2.puml)...disabled (
 restricted).
 
-<plantuml-fig-2.png, id=207, 800.9925pt x 502.87875pt>
+<plantuml-fig-2.png, id=200, 800.9925pt x 502.87875pt>
 File: plantuml-fig-2.png Graphic file (type png)
 <use plantuml-fig-2.png>
-Package pdftex.def Info: plantuml-fig-2.png  used on input line 373.
+Package pdftex.def Info: plantuml-fig-2.png  used on input line 376.
 (pdftex.def)             Requested size: 362.77773pt x 227.75894pt.
 
-Overfull \hbox (2.83766pt too wide) in alignment at lines 384--389
+Overfull \hbox (2.83766pt too wide) in alignment at lines 387--392
  [] [] [] 
  []
 
 
-Overfull \hbox (2.83766pt too wide) in alignment at lines 389--393
+Overfull \hbox (2.83766pt too wide) in alignment at lines 392--396
  [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 396--397
+Underfull \hbox (badness 10000) in paragraph at lines 399--400
 []|\T1/lmr/m/n/10 Má \T1/lmtt/m/n/10 Session\T1/lmr/m/n/10 ; môºe re-pre-zen-to
 -va´
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 396--397
+Underfull \hbox (badness 10000) in paragraph at lines 399--400
 \T1/lmtt/m/n/10 Employee\T1/lmr/m/n/10 . Ad-mi-nis-trá-tor spra-vuje
  []
 
 
-Underfull \hbox (badness 4954) in paragraph at lines 399--399
+Underfull \hbox (badness 4954) in paragraph at lines 402--402
 []|\T1/lmr/m/n/10 Entita za-mest-nanca, ktorá
  []
 
 
-Underfull \hbox (badness 6173) in paragraph at lines 411--411
+Underfull \hbox (badness 6173) in paragraph at lines 414--414
 []|\T1/lmr/m/n/10 Relácia po-u-ºí-va-te©a po-u-ºí-
  []
 
 
-Overfull \hbox (2.83766pt too wide) in alignment at lines 393--414
+Overfull \hbox (2.83766pt too wide) in alignment at lines 396--417
  [] [] [] 
  []
 
-[12 <./plantuml-fig-2.png (PNG copy)>]
+[11]
+ignored error: Infinite glue shrinkage found in box being split [12 <./plantuml
+-fig-1.png (PNG copy)>]
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 424.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 427.
 \openout3 = `plantuml-fig-3.puml'.
 
 runsystem(/opt/homebrew/opt/openjdk/bin/java -jar /Users/martinoros/bin/plantum
@@ -964,10 +965,10 @@ restricted).
 <plantuml-fig-3.png, id=214, 226.8475pt x 496.85625pt>
 File: plantuml-fig-3.png Graphic file (type png)
 <use plantuml-fig-3.png>
-Package pdftex.def Info: plantuml-fig-3.png  used on input line 444.
+Package pdftex.def Info: plantuml-fig-3.png  used on input line 447.
 (pdftex.def)             Requested size: 128.60521pt x 281.67955pt.
  [13]
-Overfull \hbox (6.7847pt too wide) in paragraph at lines 449--449
+Overfull \hbox (6.7847pt too wide) in paragraph at lines 452--452
 []\T1/lmr/bx/n/14.4 Stavový dia-gram zá-znamu do-chádzky (\T1/lmtt/b/n/14.4 Att
 endanceRecord\T1/lmr/bx/n/14.4 ) 
  []
@@ -981,9 +982,9 @@ restricted).
 <plantuml-fig-4.png, id=220, 310.15875pt x 496.85625pt>
 File: plantuml-fig-4.png Graphic file (type png)
 <use plantuml-fig-4.png>
-Package pdftex.def Info: plantuml-fig-4.png  used on input line 468.
+Package pdftex.def Info: plantuml-fig-4.png  used on input line 471.
 (pdftex.def)             Requested size: 175.83632pt x 281.67955pt.
-[14 <./plantuml-fig-3.png (PNG copy)>]
+[14 <./plantuml-fig-2.png (PNG copy)> <./plantuml-fig-3.png (PNG copy)>]
 \openout3 = `plantuml-fig-5.puml'.
 
 runsystem(/opt/homebrew/opt/openjdk/bin/java -jar /Users/martinoros/bin/plantum
@@ -993,9 +994,10 @@ restricted).
 <plantuml-fig-5.png, id=227, 174.6525pt x 286.06876pt>
 File: plantuml-fig-5.png Graphic file (type png)
 <use plantuml-fig-5.png>
-Package pdftex.def Info: plantuml-fig-5.png  used on input line 490.
+Package pdftex.def Info: plantuml-fig-5.png  used on input line 493.
 (pdftex.def)             Requested size: 122.29588pt x 200.31224pt.
- [15 <./plantuml-fig-4.png (PNG copy)>]
+
+[15 <./plantuml-fig-4.png (PNG copy)>]
 \openout3 = `plantuml-fig-6.puml'.
 
 runsystem(/opt/homebrew/opt/openjdk/bin/java -jar /Users/martinoros/bin/plantum
@@ -1005,10 +1007,9 @@ restricted).
 <plantuml-fig-6.png, id=233, 803.0pt x 715.67375pt>
 File: plantuml-fig-6.png Graphic file (type png)
 <use plantuml-fig-6.png>
-Package pdftex.def Info: plantuml-fig-6.png  used on input line 540.
+Package pdftex.def Info: plantuml-fig-6.png  used on input line 543.
 (pdftex.def)             Requested size: 341.4359pt x 304.30473pt.
-
-[16 <./plantuml-fig-5.png (PNG copy)>]
+ [16 <./plantuml-fig-5.png (PNG copy)>]
 \openout3 = `plantuml-fig-7.puml'.
 
 runsystem(/opt/homebrew/opt/openjdk/bin/java -jar /Users/martinoros/bin/plantum
@@ -1018,9 +1019,10 @@ restricted).
 <plantuml-fig-7.png, id=239, 483.8075pt x 715.67375pt>
 File: plantuml-fig-7.png Graphic file (type png)
 <use plantuml-fig-7.png>
-Package pdftex.def Info: plantuml-fig-7.png  used on input line 571.
+Package pdftex.def Info: plantuml-fig-7.png  used on input line 574.
 (pdftex.def)             Requested size: 296.21472pt x 438.17654pt.
- [17 <./plantuml-fig-6.png (PNG copy)>]
+
+[17 <./plantuml-fig-6.png (PNG copy)>]
 \openout3 = `plantuml-fig-8.puml'.
 
 runsystem(/opt/homebrew/opt/openjdk/bin/java -jar /Users/martinoros/bin/plantum
@@ -1030,242 +1032,241 @@ restricted).
 <plantuml-fig-8.png, id=245, 265.99374pt x 917.4275pt>
 File: plantuml-fig-8.png Graphic file (type png)
 <use plantuml-fig-8.png>
-Package pdftex.def Info: plantuml-fig-8.png  used on input line 603.
+Package pdftex.def Info: plantuml-fig-8.png  used on input line 606.
 (pdftex.def)             Requested size: 136.1177pt x 469.4777pt.
-
-[18 <./plantuml-fig-7.png (PNG copy)>] [19 <./plantuml-fig-8.png (PNG copy)>]
+ [18 <./plantuml-fig-7.png (PNG copy)>]
+[19 <./plantuml-fig-8.png (PNG copy)>]
 <figures/user-lofin.png, id=257, 1445.4pt x 1027.84pt>
 File: figures/user-lofin.png Graphic file (type png)
 <use figures/user-lofin.png>
-Package pdftex.def Info: figures/user-lofin.png  used on input line 623.
+Package pdftex.def Info: figures/user-lofin.png  used on input line 626.
 (pdftex.def)             Requested size: 392.64725pt x 279.21432pt.
 <figures/user-profile-history-scan.png, id=259, 1445.4pt x 1027.84pt>
 File: figures/user-profile-history-scan.png Graphic file (type png)
 <use figures/user-profile-history-scan.png>
 Package pdftex.def Info: figures/user-profile-history-scan.png  used on input l
-ine 629.
+ine 632.
 (pdftex.def)             Requested size: 392.64725pt x 279.21432pt.
-
-[20 <./figures/user-lofin.png>]
+ [20 <./figures/user-lofin.png>]
 <figures/admin-login.png, id=266, 1445.4pt x 1027.84pt>
 File: figures/admin-login.png Graphic file (type png)
 <use figures/admin-login.png>
-Package pdftex.def Info: figures/admin-login.png  used on input line 640.
+Package pdftex.def Info: figures/admin-login.png  used on input line 643.
 (pdftex.def)             Requested size: 392.64725pt x 279.21432pt.
  [21 <./figures/user-profile-history-scan.png>]
 <figures/admin-dasboard.png, id=273, 1445.4pt x 1027.84pt>
 File: figures/admin-dasboard.png Graphic file (type png)
 <use figures/admin-dasboard.png>
-Package pdftex.def Info: figures/admin-dasboard.png  used on input line 646.
+Package pdftex.def Info: figures/admin-dasboard.png  used on input line 649.
 (pdftex.def)             Requested size: 392.64725pt x 279.21432pt.
-
-[22 <./figures/admin-login.png>]
+ [22 <./figures/admin-login.png>]
 <figures/admin-qr-generator.png, id=280, 1445.4pt x 1027.84pt>
 File: figures/admin-qr-generator.png Graphic file (type png)
 <use figures/admin-qr-generator.png>
-Package pdftex.def Info: figures/admin-qr-generator.png  used on input line 652
+Package pdftex.def Info: figures/admin-qr-generator.png  used on input line 655
 .
 (pdftex.def)             Requested size: 392.64725pt x 279.21432pt.
- [23 <./figures/admin-dasboard.png>]
+
+[23 <./figures/admin-dasboard.png>]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 6
-70.
+73.
 
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [24{/usr/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc} <.
 /figures/admin-qr-generator.png>]
-Underfull \hbox (badness 6792) in paragraph at lines 699--699
+Underfull \hbox (badness 6792) in paragraph at lines 702--702
 []|\T1/lmr/m/n/10 Platné pri-hlá-se-nie
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 701--702
+Underfull \hbox (badness 10000) in paragraph at lines 704--705
 []|\T1/lmr/m/n/10 Presmerovanie na hlavnú
  []
 
 
-Underfull \hbox (badness 7133) in paragraph at lines 701--702
+Underfull \hbox (badness 7133) in paragraph at lines 704--705
 \T1/lmr/m/n/10 stránku; ses-sion je ak-tívna
  []
 
 
-Underfull \hbox (badness 3690) in paragraph at lines 703--703
+Underfull \hbox (badness 3690) in paragraph at lines 706--706
 []|\T1/lmr/m/n/10 Neplatné pri-hlá-se-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 704--704
+Underfull \hbox (badness 10000) in paragraph at lines 707--707
 []|\T1/lmr/m/n/10 Zadaj ne-exis-tu-júce
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 705--706
+Underfull \hbox (badness 10000) in paragraph at lines 708--709
 []|\T1/lmr/m/n/10 Chybová správa; po-u-ºí-va-te©
  []
 
 
-Underfull \hbox (badness 6032) in paragraph at lines 707--707
+Underfull \hbox (badness 6032) in paragraph at lines 710--710
 \T1/lmr/m/n/10 QR a zá-pis do-
  []
 
 
-Underfull \hbox (badness 4940) in paragraph at lines 708--708
+Underfull \hbox (badness 4940) in paragraph at lines 711--711
 \T1/lmr/m/n/10 na-nec; ot-vor ske-ner;
  []
 
 
-Underfull \hbox (badness 4072) in paragraph at lines 708--708
+Underfull \hbox (badness 4072) in paragraph at lines 711--711
 \T1/lmr/m/n/10 na-ske-nuj platný kód
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 708--708
+Underfull \hbox (badness 10000) in paragraph at lines 711--711
 \T1/lmr/m/n/10 za-mest-nanca; po-tvr¤
  []
 
 
-Underfull \hbox (badness 3612) in paragraph at lines 709--710
+Underfull \hbox (badness 3612) in paragraph at lines 712--713
 []|\T1/lmr/m/n/10 Záznam prí-chodu alebo od-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 711--711
+Underfull \hbox (badness 10000) in paragraph at lines 714--714
 []|\T1/lmr/m/n/10 Skenovanie bez
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 711--711
+Underfull \hbox (badness 10000) in paragraph at lines 714--714
 \T1/lmr/m/n/10 plat-ného QR /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 715--715
+Underfull \hbox (badness 10000) in paragraph at lines 718--718
 []|\T1/lmr/m/n/10 Zobrazenie po-tvr-
  []
 
 
-Underfull \hbox (badness 3323) in paragraph at lines 716--716
+Underfull \hbox (badness 3323) in paragraph at lines 719--719
 []|\T1/lmr/m/n/10 Po úspe²-nom UC-02
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 716--716
+Underfull \hbox (badness 10000) in paragraph at lines 719--719
 \T1/lmr/m/n/10 sle-duj správu alebo
  []
 
 
-Underfull \hbox (badness 1596) in paragraph at lines 717--718
+Underfull \hbox (badness 1596) in paragraph at lines 720--721
 \T1/lmr/m/n/10 znamu a £asu alebo ek-vi-va-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 720--720
+Underfull \hbox (badness 10000) in paragraph at lines 723--723
 []|\T1/lmr/m/n/10 Na hlav-nej stránke
  []
 
 
-Underfull \hbox (badness 6792) in paragraph at lines 723--723
+Underfull \hbox (badness 6792) in paragraph at lines 726--726
 []|\T1/lmr/m/n/10 Platné pri-hlá-se-nie
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 724--724
+Underfull \hbox (badness 10000) in paragraph at lines 727--727
 []|\T1/lmr/m/n/10 Otvor ad-min lo-gin;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 724--724
+Underfull \hbox (badness 10000) in paragraph at lines 727--727
 \T1/lmr/m/n/10 za-daj platné ad-min
  []
 
 
-Underfull \hbox (badness 3690) in paragraph at lines 727--727
+Underfull \hbox (badness 3690) in paragraph at lines 730--730
 []|\T1/lmr/m/n/10 Neplatné pri-hlá-se-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 731--731
+Underfull \hbox (badness 10000) in paragraph at lines 734--734
 []|\T1/lmr/m/n/10 Filtrovanie do-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 735--735
+Underfull \hbox (badness 10000) in paragraph at lines 738--738
 []|\T1/lmr/m/n/10 Úprava zá-znamu
  []
 
 
-Underfull \hbox (badness 4024) in paragraph at lines 736--736
+Underfull \hbox (badness 4024) in paragraph at lines 739--739
 []|\T1/lmr/m/n/10 Vyber ria-dok; uprav
  []
 
 
-Underfull \hbox (badness 4660) in paragraph at lines 736--736
+Underfull \hbox (badness 4660) in paragraph at lines 739--739
 \T1/lmr/m/n/10 £as alebo re-le-vantné
  []
 
 
-Underfull \hbox (badness 3735) in paragraph at lines 737--738
+Underfull \hbox (badness 3735) in paragraph at lines 740--741
 []|\T1/lmr/m/n/10 Zmeny per-sis-to-vané; ta-bu©ka
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 739--739
+Underfull \hbox (badness 10000) in paragraph at lines 742--742
 []|\T1/lmr/m/n/10 Vymazanie zá-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 744--744
+Underfull \hbox (badness 10000) in paragraph at lines 747--747
 []|\T1/lmr/m/n/10 Nastav fil-ter (vo-li-
  []
 
 
-Underfull \hbox (badness 3690) in paragraph at lines 744--744
+Underfull \hbox (badness 3690) in paragraph at lines 747--747
 \T1/lmr/m/n/10 te©ne); spusti export
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 747--747
+Underfull \hbox (badness 10000) in paragraph at lines 750--750
 []|\T1/lmr/m/n/10 Generovanie QR
  []
 
 
-Underfull \hbox (badness 1796) in paragraph at lines 749--750
+Underfull \hbox (badness 1796) in paragraph at lines 752--753
 []|\T1/lmr/m/n/10 QR sú-bor alebo ná-h©ad do-
  []
 
 
-Underfull \hbox (badness 4441) in paragraph at lines 752--752
+Underfull \hbox (badness 4441) in paragraph at lines 755--755
 \T1/lmr/m/n/10 nanca (pod©a im-ple-
  []
 
 
-Underfull \hbox (badness 6412) in paragraph at lines 753--754
+Underfull \hbox (badness 6412) in paragraph at lines 756--757
 []|\T1/lmr/m/n/10 Zamestnanec je v sys-téme;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 755--755
+Underfull \hbox (badness 10000) in paragraph at lines 758--758
 []|\T1/lmr/m/n/10 Deaktivácia za-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 756--756
+Underfull \hbox (badness 10000) in paragraph at lines 759--759
 []|\T1/lmr/m/n/10 Deaktivuj
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 756--756
+Underfull \hbox (badness 10000) in paragraph at lines 759--759
 \T1/lmr/m/n/10 ú£et/zamestnanca;
  []
 
 ignored error: Infinite glue shrinkage found in box being split [25]
 ignored error: Infinite glue shrinkage found in box being split [26]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 786.
+(Font)              <10> on input line 789.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 786.
+(Font)              <7> on input line 789.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 786.
+(Font)              <5> on input line 789.
  [27])
 [28{/usr/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
 (./tukedip.aux (./formulacia.aux) (./analyza.aux))
@@ -1279,7 +1280,7 @@ Package rerunfilecheck Info: File `tukedip.out' has not changed.
 Here is how much of TeX's memory you used:
  13184 strings out of 468991
  206566 string characters out of 5454207
- 647083 words of memory out of 5000000
+ 647174 words of memory out of 5000000
  41539 multiletter control sequences out of 15000+600000
  699954 words of font info for 98 fonts, out of 8000000 for 9000
  324 hyphenation exceptions out of 8191
@@ -1295,7 +1296,7 @@ texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2025basic/texmf
 /fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2025basic/texmf-dist/font
 s/type1/public/lm/lmtt10.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/typ
 e1/public/lm/lmtt12.pfb>
-Output written on tukedip.pdf (28 pages, 839355 bytes).
+Output written on tukedip.pdf (28 pages, 839656 bytes).
 PDF statistics:
  391 PDF objects out of 1000 (max. 8388607)
  315 compressed objects within 4 object streams
