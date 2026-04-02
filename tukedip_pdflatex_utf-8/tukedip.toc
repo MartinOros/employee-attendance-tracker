@@ -17,11 +17,11 @@
 \contentsline {subsection}{\numberline {5.3}Diagram aktivít – UC-06 Prehliadanie a filtrovanie dochádzky}{19}{subsection.5.3}%
 \contentsline {section}{\numberline {6}Návrh používateľského rozhrania (UI-design)}{20}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Rozhranie pre zamestnanca}{20}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Administrátorské rozhranie}{20}{subsection.6.2}%
-\contentsline {section}{\numberline {7}Testovanie}{21}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Testovacia stratégia}{21}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Testovacie scenáre (test cases)}{22}{subsection.7.2}%
-\contentsline {section}{\numberline {8}Vlastné riešenie}{24}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Prehľad architektúry}{24}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Hlavné funkcionality}{24}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Použité technológie}{25}{subsection.8.3}%
+\contentsline {subsection}{\numberline {6.2}Administrátorské rozhranie}{21}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Testovanie}{24}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Testovacia stratégia}{24}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Testovacie scenáre (test cases)}{25}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Vlastné riešenie}{27}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Prehľad architektúry}{27}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Hlavné funkcionality}{27}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Použité technológie}{28}{subsection.8.3}%

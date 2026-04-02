@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.7)  31 MAR 2026 23:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.7)  2 APR 2026 12:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -662,11 +662,6 @@ Underfull \hbox (badness 3302) in paragraph at lines 72--74
  []
 
 
-Underfull \hbox (badness 3312) in paragraph at lines 79--81
-\T1/lmr/m/n/10 fil-tro-va-nie vra-cia iba re-le-vantné
- []
-
-
 Underfull \hbox (badness 3449) in paragraph at lines 83--84
 []|\T1/lmr/m/n/10 Ako ad-mi-nis-trá-tor chcem upra-
  []
@@ -714,6 +709,11 @@ Underfull \hbox (badness 5460) in paragraph at lines 128--128
 
 Underfull \hbox (badness 1642) in paragraph at lines 130--131
 \T1/lmr/m/n/10 platný ú£et. Výs: pri-hlá-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+\T1/lmr/m/n/10 sený, pre-sme-ro-vaný na
  []
 
 
@@ -994,7 +994,7 @@ restricted).
 File: plantuml-fig-5.png Graphic file (type png)
 <use plantuml-fig-5.png>
 Package pdftex.def Info: plantuml-fig-5.png  used on input line 490.
-(pdftex.def)             Requested size: 171.97643pt x 281.68553pt.
+(pdftex.def)             Requested size: 122.29588pt x 200.31224pt.
  [15 <./plantuml-fig-4.png (PNG copy)>]
 \openout3 = `plantuml-fig-6.puml'.
 
@@ -1034,237 +1034,253 @@ Package pdftex.def Info: plantuml-fig-8.png  used on input line 603.
 (pdftex.def)             Requested size: 136.1177pt x 469.4777pt.
 
 [18 <./plantuml-fig-7.png (PNG copy)>] [19 <./plantuml-fig-8.png (PNG copy)>]
-<figures/ui-employee-app.png, id=257, 1027.84pt x 443.6575pt>
-File: figures/ui-employee-app.png Graphic file (type png)
-<use figures/ui-employee-app.png>
-Package pdftex.def Info: figures/ui-employee-app.png  used on input line 623.
-(pdftex.def)             Requested size: 392.64725pt x 169.48518pt.
-<figures/ui-admin-dashboard.png, id=258, 1027.84pt x 436.63126pt>
-File: figures/ui-admin-dashboard.png Graphic file (type png)
-<use figures/ui-admin-dashboard.png>
-Package pdftex.def Info: figures/ui-admin-dashboard.png  used on input line 635
-.
-(pdftex.def)             Requested size: 392.64725pt x 166.80104pt.
+<figures/user-lofin.png, id=257, 1445.4pt x 1027.84pt>
+File: figures/user-lofin.png Graphic file (type png)
+<use figures/user-lofin.png>
+Package pdftex.def Info: figures/user-lofin.png  used on input line 623.
+(pdftex.def)             Requested size: 392.64725pt x 279.21432pt.
+<figures/user-profile-history-scan.png, id=259, 1445.4pt x 1027.84pt>
+File: figures/user-profile-history-scan.png Graphic file (type png)
+<use figures/user-profile-history-scan.png>
+Package pdftex.def Info: figures/user-profile-history-scan.png  used on input l
+ine 629.
+(pdftex.def)             Requested size: 392.64725pt x 279.21432pt.
 
-[20 <./figures/ui-employee-app.png>]
+[20 <./figures/user-lofin.png>]
+<figures/admin-login.png, id=266, 1445.4pt x 1027.84pt>
+File: figures/admin-login.png Graphic file (type png)
+<use figures/admin-login.png>
+Package pdftex.def Info: figures/admin-login.png  used on input line 640.
+(pdftex.def)             Requested size: 392.64725pt x 279.21432pt.
+ [21 <./figures/user-profile-history-scan.png>]
+<figures/admin-dasboard.png, id=273, 1445.4pt x 1027.84pt>
+File: figures/admin-dasboard.png Graphic file (type png)
+<use figures/admin-dasboard.png>
+Package pdftex.def Info: figures/admin-dasboard.png  used on input line 646.
+(pdftex.def)             Requested size: 392.64725pt x 279.21432pt.
+
+[22 <./figures/admin-login.png>]
+<figures/admin-qr-generator.png, id=280, 1445.4pt x 1027.84pt>
+File: figures/admin-qr-generator.png Graphic file (type png)
+<use figures/admin-qr-generator.png>
+Package pdftex.def Info: figures/admin-qr-generator.png  used on input line 652
+.
+(pdftex.def)             Requested size: 392.64725pt x 279.21432pt.
+ [23 <./figures/admin-dasboard.png>]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 6
-53.
+70.
 
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [21{/usr/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc} <.
-/figures/ui-admin-dashboard.png>]
-Underfull \hbox (badness 6792) in paragraph at lines 682--682
+) [24{/usr/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc} <.
+/figures/admin-qr-generator.png>]
+Underfull \hbox (badness 6792) in paragraph at lines 699--699
 []|\T1/lmr/m/n/10 Platné pri-hlá-se-nie
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 684--685
+Underfull \hbox (badness 10000) in paragraph at lines 701--702
 []|\T1/lmr/m/n/10 Presmerovanie na hlavnú
  []
 
 
-Underfull \hbox (badness 7133) in paragraph at lines 684--685
+Underfull \hbox (badness 7133) in paragraph at lines 701--702
 \T1/lmr/m/n/10 stránku; ses-sion je ak-tívna
  []
 
 
-Underfull \hbox (badness 3690) in paragraph at lines 686--686
+Underfull \hbox (badness 3690) in paragraph at lines 703--703
 []|\T1/lmr/m/n/10 Neplatné pri-hlá-se-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 687--687
+Underfull \hbox (badness 10000) in paragraph at lines 704--704
 []|\T1/lmr/m/n/10 Zadaj ne-exis-tu-júce
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 688--689
+Underfull \hbox (badness 10000) in paragraph at lines 705--706
 []|\T1/lmr/m/n/10 Chybová správa; po-u-ºí-va-te©
  []
 
 
-Underfull \hbox (badness 6032) in paragraph at lines 690--690
+Underfull \hbox (badness 6032) in paragraph at lines 707--707
 \T1/lmr/m/n/10 QR a zá-pis do-
  []
 
 
-Underfull \hbox (badness 4940) in paragraph at lines 691--691
+Underfull \hbox (badness 4940) in paragraph at lines 708--708
 \T1/lmr/m/n/10 na-nec; ot-vor ske-ner;
  []
 
 
-Underfull \hbox (badness 4072) in paragraph at lines 691--691
+Underfull \hbox (badness 4072) in paragraph at lines 708--708
 \T1/lmr/m/n/10 na-ske-nuj platný kód
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 691--691
+Underfull \hbox (badness 10000) in paragraph at lines 708--708
 \T1/lmr/m/n/10 za-mest-nanca; po-tvr¤
  []
 
 
-Underfull \hbox (badness 3612) in paragraph at lines 692--693
+Underfull \hbox (badness 3612) in paragraph at lines 709--710
 []|\T1/lmr/m/n/10 Záznam prí-chodu alebo od-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 694--694
+Underfull \hbox (badness 10000) in paragraph at lines 711--711
 []|\T1/lmr/m/n/10 Skenovanie bez
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 694--694
+Underfull \hbox (badness 10000) in paragraph at lines 711--711
 \T1/lmr/m/n/10 plat-ného QR /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 698--698
+Underfull \hbox (badness 10000) in paragraph at lines 715--715
 []|\T1/lmr/m/n/10 Zobrazenie po-tvr-
  []
 
 
-Underfull \hbox (badness 3323) in paragraph at lines 699--699
+Underfull \hbox (badness 3323) in paragraph at lines 716--716
 []|\T1/lmr/m/n/10 Po úspe²-nom UC-02
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 699--699
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
 \T1/lmr/m/n/10 sle-duj správu alebo
  []
 
 
-Underfull \hbox (badness 1596) in paragraph at lines 700--701
+Underfull \hbox (badness 1596) in paragraph at lines 717--718
 \T1/lmr/m/n/10 znamu a £asu alebo ek-vi-va-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 703--703
+Underfull \hbox (badness 10000) in paragraph at lines 720--720
 []|\T1/lmr/m/n/10 Na hlav-nej stránke
  []
 
 
-Underfull \hbox (badness 6792) in paragraph at lines 706--706
+Underfull \hbox (badness 6792) in paragraph at lines 723--723
 []|\T1/lmr/m/n/10 Platné pri-hlá-se-nie
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 707--707
+Underfull \hbox (badness 10000) in paragraph at lines 724--724
 []|\T1/lmr/m/n/10 Otvor ad-min lo-gin;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 707--707
+Underfull \hbox (badness 10000) in paragraph at lines 724--724
 \T1/lmr/m/n/10 za-daj platné ad-min
  []
 
 
-Underfull \hbox (badness 3690) in paragraph at lines 710--710
+Underfull \hbox (badness 3690) in paragraph at lines 727--727
 []|\T1/lmr/m/n/10 Neplatné pri-hlá-se-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 714--714
+Underfull \hbox (badness 10000) in paragraph at lines 731--731
 []|\T1/lmr/m/n/10 Filtrovanie do-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 718--718
+Underfull \hbox (badness 10000) in paragraph at lines 735--735
 []|\T1/lmr/m/n/10 Úprava zá-znamu
  []
 
 
-Underfull \hbox (badness 4024) in paragraph at lines 719--719
+Underfull \hbox (badness 4024) in paragraph at lines 736--736
 []|\T1/lmr/m/n/10 Vyber ria-dok; uprav
  []
 
 
-Underfull \hbox (badness 4660) in paragraph at lines 719--719
+Underfull \hbox (badness 4660) in paragraph at lines 736--736
 \T1/lmr/m/n/10 £as alebo re-le-vantné
  []
 
 
-Underfull \hbox (badness 3735) in paragraph at lines 720--721
+Underfull \hbox (badness 3735) in paragraph at lines 737--738
 []|\T1/lmr/m/n/10 Zmeny per-sis-to-vané; ta-bu©ka
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 722--722
+Underfull \hbox (badness 10000) in paragraph at lines 739--739
 []|\T1/lmr/m/n/10 Vymazanie zá-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 727--727
+Underfull \hbox (badness 10000) in paragraph at lines 744--744
 []|\T1/lmr/m/n/10 Nastav fil-ter (vo-li-
  []
 
 
-Underfull \hbox (badness 3690) in paragraph at lines 727--727
+Underfull \hbox (badness 3690) in paragraph at lines 744--744
 \T1/lmr/m/n/10 te©ne); spusti export
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 730--730
+Underfull \hbox (badness 10000) in paragraph at lines 747--747
 []|\T1/lmr/m/n/10 Generovanie QR
  []
 
 
-Underfull \hbox (badness 1796) in paragraph at lines 732--733
+Underfull \hbox (badness 1796) in paragraph at lines 749--750
 []|\T1/lmr/m/n/10 QR sú-bor alebo ná-h©ad do-
  []
 
 
-Underfull \hbox (badness 4441) in paragraph at lines 735--735
+Underfull \hbox (badness 4441) in paragraph at lines 752--752
 \T1/lmr/m/n/10 nanca (pod©a im-ple-
  []
 
 
-Underfull \hbox (badness 6412) in paragraph at lines 736--737
+Underfull \hbox (badness 6412) in paragraph at lines 753--754
 []|\T1/lmr/m/n/10 Zamestnanec je v sys-téme;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 738--738
+Underfull \hbox (badness 10000) in paragraph at lines 755--755
 []|\T1/lmr/m/n/10 Deaktivácia za-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 739--739
+Underfull \hbox (badness 10000) in paragraph at lines 756--756
 []|\T1/lmr/m/n/10 Deaktivuj
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 739--739
+Underfull \hbox (badness 10000) in paragraph at lines 756--756
 \T1/lmr/m/n/10 ú£et/zamestnanca;
  []
 
-ignored error: Infinite glue shrinkage found in box being split [22]
-ignored error: Infinite glue shrinkage found in box being split [23]
+ignored error: Infinite glue shrinkage found in box being split [25]
+ignored error: Infinite glue shrinkage found in box being split [26]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 769.
+(Font)              <10> on input line 786.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 769.
+(Font)              <7> on input line 786.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 769.
- [24{/usr/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
-) [25]
+(Font)              <5> on input line 786.
+ [27])
+[28{/usr/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
 (./tukedip.aux (./formulacia.aux) (./analyza.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `tukedip.out' has not changed.
 (rerunfilecheck)             Checksum: B13D9E800A2758B3D6A8C3F9F507BA34;6419.
  ) 
 Here is how much of TeX's memory you used:
- 13148 strings out of 468991
- 205575 string characters out of 5454207
- 646828 words of memory out of 5000000
- 41509 multiletter control sequences out of 15000+600000
+ 13184 strings out of 468991
+ 206566 string characters out of 5454207
+ 647083 words of memory out of 5000000
+ 41539 multiletter control sequences out of 15000+600000
  699954 words of font info for 98 fonts, out of 8000000 for 9000
  324 hyphenation exceptions out of 8191
  75i,8n,79p,465b,614s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1279,10 +1295,10 @@ texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2025basic/texmf
 /fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2025basic/texmf-dist/font
 s/type1/public/lm/lmtt10.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/typ
 e1/public/lm/lmtt12.pfb>
-Output written on tukedip.pdf (25 pages, 679250 bytes).
+Output written on tukedip.pdf (28 pages, 839355 bytes).
 PDF statistics:
- 364 PDF objects out of 1000 (max. 8388607)
- 300 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 500000)
- 259 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 391 PDF objects out of 1000 (max. 8388607)
+ 315 compressed objects within 4 object streams
+ 75 named destinations out of 1000 (max. 500000)
+ 274 words of extra memory for PDF output out of 10000 (max. 10000000)
 
