@@ -1,6 +1,7 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.7)  2 APR 2026 12:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.7)  21 APR 2026 20:29
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **tukedip.tex
 (./tukedip.tex
@@ -686,12 +687,14 @@ Overfull \hbox (14.61858pt too wide) in alignment at lines 47--109
  [] [] [] [] 
  []
 
-ignored error: Infinite glue shrinkage found in box being split [6
+./analyza.tex:109: ignored error: Infinite glue shrinkage found in box being sp
+lit [6
 
 
 
 ]
-ignored error: Infinite glue shrinkage found in box being split [7]
+./analyza.tex:109: ignored error: Infinite glue shrinkage found in box being sp
+lit [7]
 Overfull \hbox (17.46404pt too wide) in alignment at lines 121--126
  [] [] [] [] 
  []
@@ -886,18 +889,20 @@ Overfull \hbox (17.46404pt too wide) in alignment at lines 130--182
  [] [] [] [] 
  []
 
-ignored error: Infinite glue shrinkage found in box being split [8]
-ignored error: Infinite glue shrinkage found in box being split [9]
+./analyza.tex:182: ignored error: Infinite glue shrinkage found in box being sp
+lit [8]
+./analyza.tex:182: ignored error: Infinite glue shrinkage found in box being sp
+lit [9]
 Underfull \hbox (badness 8019) in paragraph at lines 207--207
 []|\T1/lmr/m/n/10 Skenovanie QR kódu a au-to-ma-tické ulo-ºe-nie prí-
  []
 
-ignored error: Infinite glue shrinkage found in box being split [10]
+./analyza.tex:227: ignored error: Infinite glue shrinkage found in box being sp
+lit [10]
 \openout3 = `plantuml-fig-1.puml'.
 
 runsystem(/opt/homebrew/opt/openjdk/bin/java -jar /Users/martinoros/bin/plantum
-l.jar -graphvizdot /opt/homebrew/bin/dot -png plantuml-fig-1.puml)...disabled (
-restricted).
+l.jar -graphvizdot /opt/homebrew/bin/dot -png plantuml-fig-1.puml)...executed.
 
 <plantuml-fig-1.png, id=198, 421.575pt x 959.585pt>
 File: plantuml-fig-1.png Graphic file (type png)
@@ -907,8 +912,7 @@ Package pdftex.def Info: plantuml-fig-1.png  used on input line 295.
 \openout3 = `plantuml-fig-2.puml'.
 
 runsystem(/opt/homebrew/opt/openjdk/bin/java -jar /Users/martinoros/bin/plantum
-l.jar -graphvizdot /opt/homebrew/bin/dot -png plantuml-fig-2.puml)...disabled (
-restricted).
+l.jar -graphvizdot /opt/homebrew/bin/dot -png plantuml-fig-2.puml)...executed.
 
 <plantuml-fig-2.png, id=200, 800.9925pt x 502.87875pt>
 File: plantuml-fig-2.png Graphic file (type png)
@@ -952,15 +956,14 @@ Overfull \hbox (2.83766pt too wide) in alignment at lines 396--417
  []
 
 [11]
-ignored error: Infinite glue shrinkage found in box being split [12 <./plantuml
--fig-1.png (PNG copy)>]
+./analyza.tex:417: ignored error: Infinite glue shrinkage found in box being sp
+lit [12 <./plantuml-fig-1.png (PNG copy)>]
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 427.
 \openout3 = `plantuml-fig-3.puml'.
 
 runsystem(/opt/homebrew/opt/openjdk/bin/java -jar /Users/martinoros/bin/plantum
-l.jar -graphvizdot /opt/homebrew/bin/dot -png plantuml-fig-3.puml)...disabled (
-restricted).
+l.jar -graphvizdot /opt/homebrew/bin/dot -png plantuml-fig-3.puml)...executed.
 
 <plantuml-fig-3.png, id=214, 226.8475pt x 496.85625pt>
 File: plantuml-fig-3.png Graphic file (type png)
@@ -976,8 +979,7 @@ endanceRecord\T1/lmr/bx/n/14.4 )
 \openout3 = `plantuml-fig-4.puml'.
 
 runsystem(/opt/homebrew/opt/openjdk/bin/java -jar /Users/martinoros/bin/plantum
-l.jar -graphvizdot /opt/homebrew/bin/dot -png plantuml-fig-4.puml)...disabled (
-restricted).
+l.jar -graphvizdot /opt/homebrew/bin/dot -png plantuml-fig-4.puml)...executed.
 
 <plantuml-fig-4.png, id=220, 310.15875pt x 496.85625pt>
 File: plantuml-fig-4.png Graphic file (type png)
@@ -988,8 +990,7 @@ Package pdftex.def Info: plantuml-fig-4.png  used on input line 471.
 \openout3 = `plantuml-fig-5.puml'.
 
 runsystem(/opt/homebrew/opt/openjdk/bin/java -jar /Users/martinoros/bin/plantum
-l.jar -graphvizdot /opt/homebrew/bin/dot -png plantuml-fig-5.puml)...disabled (
-restricted).
+l.jar -graphvizdot /opt/homebrew/bin/dot -png plantuml-fig-5.puml)...executed.
 
 <plantuml-fig-5.png, id=227, 174.6525pt x 286.06876pt>
 File: plantuml-fig-5.png Graphic file (type png)
@@ -1001,8 +1002,7 @@ Package pdftex.def Info: plantuml-fig-5.png  used on input line 493.
 \openout3 = `plantuml-fig-6.puml'.
 
 runsystem(/opt/homebrew/opt/openjdk/bin/java -jar /Users/martinoros/bin/plantum
-l.jar -graphvizdot /opt/homebrew/bin/dot -png plantuml-fig-6.puml)...disabled (
-restricted).
+l.jar -graphvizdot /opt/homebrew/bin/dot -png plantuml-fig-6.puml)...executed.
 
 <plantuml-fig-6.png, id=233, 803.0pt x 715.67375pt>
 File: plantuml-fig-6.png Graphic file (type png)
@@ -1013,8 +1013,7 @@ Package pdftex.def Info: plantuml-fig-6.png  used on input line 543.
 \openout3 = `plantuml-fig-7.puml'.
 
 runsystem(/opt/homebrew/opt/openjdk/bin/java -jar /Users/martinoros/bin/plantum
-l.jar -graphvizdot /opt/homebrew/bin/dot -png plantuml-fig-7.puml)...disabled (
-restricted).
+l.jar -graphvizdot /opt/homebrew/bin/dot -png plantuml-fig-7.puml)...executed.
 
 <plantuml-fig-7.png, id=239, 483.8075pt x 715.67375pt>
 File: plantuml-fig-7.png Graphic file (type png)
@@ -1026,8 +1025,7 @@ Package pdftex.def Info: plantuml-fig-7.png  used on input line 574.
 \openout3 = `plantuml-fig-8.puml'.
 
 runsystem(/opt/homebrew/opt/openjdk/bin/java -jar /Users/martinoros/bin/plantum
-l.jar -graphvizdot /opt/homebrew/bin/dot -png plantuml-fig-8.puml)...disabled (
-restricted).
+l.jar -graphvizdot /opt/homebrew/bin/dot -png plantuml-fig-8.puml)...executed.
 
 <plantuml-fig-8.png, id=245, 265.99374pt x 917.4275pt>
 File: plantuml-fig-8.png Graphic file (type png)
@@ -1259,17 +1257,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 759--759
 \T1/lmr/m/n/10 ú£et/zamestnanca;
  []
 
-ignored error: Infinite glue shrinkage found in box being split [25]
-ignored error: Infinite glue shrinkage found in box being split [26]
+./analyza.tex:762: ignored error: Infinite glue shrinkage found in box being sp
+lit [25]
+./analyza.tex:762: ignored error: Infinite glue shrinkage found in box being sp
+lit [26]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 789.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 789.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 789.
- [27])
-[28{/usr/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
-(./tukedip.aux (./formulacia.aux) (./analyza.aux))
+ [27]) [28{/usr/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/lm/lm-mathsy
+.enc}] (./tukedip.aux (./formulacia.aux) (./analyza.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -1280,7 +1279,7 @@ Package rerunfilecheck Info: File `tukedip.out' has not changed.
 Here is how much of TeX's memory you used:
  13184 strings out of 468991
  206566 string characters out of 5454207
- 647174 words of memory out of 5000000
+ 647173 words of memory out of 5000000
  41539 multiletter control sequences out of 15000+600000
  699954 words of font info for 98 fonts, out of 8000000 for 9000
  324 hyphenation exceptions out of 8191
@@ -1296,7 +1295,7 @@ texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2025basic/texmf
 /fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2025basic/texmf-dist/font
 s/type1/public/lm/lmtt10.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/typ
 e1/public/lm/lmtt12.pfb>
-Output written on tukedip.pdf (28 pages, 839656 bytes).
+Output written on tukedip.pdf (28 pages, 838944 bytes).
 PDF statistics:
  391 PDF objects out of 1000 (max. 8388607)
  315 compressed objects within 4 object streams
